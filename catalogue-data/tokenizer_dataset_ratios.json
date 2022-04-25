@@ -1,0 +1,2462 @@
+[
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_arabench",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_habibi",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_labr",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_opus100",
+    "is_catalogue": true,
+    "ratio": 0.9207891161534574
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 0.9132913063675548
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_kalimat",
+    "is_catalogue": true,
+    "ratio": 0.9011556065621715
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_osac",
+    "is_catalogue": true,
+    "ratio": 0.3586343348957755
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_brad_2",
+    "is_catalogue": true,
+    "ratio": 0.21519569653984136
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_ksucca",
+    "is_catalogue": true,
+    "ratio": 0.18555571438535506
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_sanad",
+    "is_catalogue": true,
+    "ratio": 0.14668164144111792
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_tashkeela",
+    "is_catalogue": true,
+    "ratio": 0.0789583865535074
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.06795405837467239
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_pseudocrawl-filtered_595_mawdoo3_com",
+    "is_catalogue": true,
+    "ratio": 0.03880123636363637
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_multi_un_2",
+    "is_catalogue": true,
+    "ratio": 0.03196895937524206
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ar_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.029187582764812717
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.023121627058309023
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_uncorpus",
+    "is_catalogue": true,
+    "ratio": 0.016499951904443384
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_openiti_proc",
+    "is_catalogue": true,
+    "ratio": 0.006005538784834918
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_arabic_billion_words",
+    "is_catalogue": true,
+    "ratio": 0.005059956984868376
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ar_openiti",
+    "is_catalogue": true,
+    "ratio": 0.004905451740747293
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_xquad_ca",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_sts_ca",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_vilaquad",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_viquiquad",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikimedia_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_enriched_conllu_ancora_for_ml_training",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_teca",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_tv3_parla",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_parlament_parla",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_ca_text_corpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.5381985734764918
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_catalan_government_crawling",
+    "is_catalogue": true,
+    "ratio": 0.4496869725023914
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_tecla",
+    "is_catalogue": true,
+    "ratio": 0.3601381471966555
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_ca_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.06371327481340346
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_catalan_general_crawling",
+    "is_catalogue": true,
+    "ratio": 0.04317725825756027
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_ca_catalan_textual_corpus",
+    "is_catalogue": true,
+    "ratio": 0.010662403915331775
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_book_dash_books",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_scielo",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_odiencorp",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_a_million_news_headlines_abc_australia",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.9578337427172079
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 0.5805602969108978
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_india_news_headlines_dataset",
+    "is_catalogue": true,
+    "ratio": 0.47574184814669923
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.3015012017898958
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.26287202727039743
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_the_pile_europarl",
+    "is_catalogue": true,
+    "ratio": 0.2404165716892006
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_royal_society_corpus",
+    "is_catalogue": true,
+    "ratio": 0.19925021466003817
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.19914680231416035
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.1152861348662599
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_multi_un_2",
+    "is_catalogue": true,
+    "ratio": 0.03136356976679824
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.021091793915853866
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_uncorpus",
+    "is_catalogue": true,
+    "ratio": 0.01764570993261537
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_no_code_stackexchange/data",
+    "is_catalogue": true,
+    "ratio": 0.013790335204895735
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.008053609144163
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.005922166806412612
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_project_gutenberg",
+    "is_catalogue": true,
+    "ratio": 0.004281603808236446
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_the_pile_uspto",
+    "is_catalogue": true,
+    "ratio": 0.0032190157880081253
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_s2orc_ai2_abstracts/data",
+    "is_catalogue": true,
+    "ratio": 0.000683352697295153
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_pmc",
+    "is_catalogue": true,
+    "ratio": 0.0006769072632974425
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_en_arxiv",
+    "is_catalogue": true,
+    "ratio": 0.00042076276857936306
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_en_s2orc_ai2_pdf_parses/data",
+    "is_catalogue": true,
+    "ratio": 0.0002946616923076923
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.7036637887999964
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.6791967818408597
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_scielo",
+    "is_catalogue": true,
+    "ratio": 0.6482275689845661
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 0.5292766469384517
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.4276069627155047
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.33902684920496773
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 0.2195837809085413
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_opus100",
+    "is_catalogue": true,
+    "ratio": 0.20771526371225454
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.14443007510972672
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_244_www_df_cl",
+    "is_catalogue": true,
+    "ratio": 0.07400304
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_62_www_lapagina_com_sv",
+    "is_catalogue": true,
+    "ratio": 0.07400304
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_280_salamancartvaldia_es",
+    "is_catalogue": true,
+    "ratio": 0.07400304
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_32_www_elexpresso_com",
+    "is_catalogue": true,
+    "ratio": 0.07047908571428571
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_30_www_radiocable_com",
+    "is_catalogue": true,
+    "ratio": 0.07047908571428571
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_158_www_diariodeleon_es",
+    "is_catalogue": true,
+    "ratio": 0.06727549090909091
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_219_www_aguasresiduales_info",
+    "is_catalogue": true,
+    "ratio": 0.0643504695652174
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_153_financialfood_es",
+    "is_catalogue": true,
+    "ratio": 0.0643504695652174
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_56_www_eluniverso_com",
+    "is_catalogue": true,
+    "ratio": 0.0643504695652174
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_207_elimpulso_com",
+    "is_catalogue": true,
+    "ratio": 0.0616692
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_125_www_noticiasde_es",
+    "is_catalogue": true,
+    "ratio": 0.0616692
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_420_www_retema_es",
+    "is_catalogue": true,
+    "ratio": 0.0616692
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_374_www_talcualdigital_com",
+    "is_catalogue": true,
+    "ratio": 0.059202432
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_182_correodelsur_com",
+    "is_catalogue": true,
+    "ratio": 0.05692541538461538
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_118_www_elheraldo_hn",
+    "is_catalogue": true,
+    "ratio": 0.054817066666666664
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_386_www_prensalibre_com",
+    "is_catalogue": true,
+    "ratio": 0.054817066666666664
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_233_www_dinero_com",
+    "is_catalogue": true,
+    "ratio": 0.054817066666666664
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_254_diario_mx",
+    "is_catalogue": true,
+    "ratio": 0.054817066666666664
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_294_www_laopinion_com_co",
+    "is_catalogue": true,
+    "ratio": 0.05285931428571428
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_project_gutenberg",
+    "is_catalogue": true,
+    "ratio": 0.05108803394497476
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_23_www_elconfidencialdigital_com",
+    "is_catalogue": true,
+    "ratio": 0.04933536
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_286_www_nacion_com",
+    "is_catalogue": true,
+    "ratio": 0.04933536
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_422_www_formulatv_com",
+    "is_catalogue": true,
+    "ratio": 0.04774389677419355
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_417_www_radiolaprimerisima_com",
+    "is_catalogue": true,
+    "ratio": 0.04774389677419355
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_406_www_americaeconomia_com",
+    "is_catalogue": true,
+    "ratio": 0.04774389677419355
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_367_elcorreoweb_es",
+    "is_catalogue": true,
+    "ratio": 0.04774389677419355
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_276_radio_uchile_cl",
+    "is_catalogue": true,
+    "ratio": 0.0462519
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_231_ojo_pe",
+    "is_catalogue": true,
+    "ratio": 0.0462519
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_223_www_eltambor_es",
+    "is_catalogue": true,
+    "ratio": 0.044850327272727274
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_325_www_laprensa_hn",
+    "is_catalogue": true,
+    "ratio": 0.0435312
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_250_www_cooperativa_cl",
+    "is_catalogue": true,
+    "ratio": 0.0435312
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_246_www_eldiarionuevodia_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.0435312
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_34_www_losandes_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.04228745142857143
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_the_pile_europarl",
+    "is_catalogue": true,
+    "ratio": 0.04157519983450604
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_277_www_entornointeligente_com",
+    "is_catalogue": true,
+    "ratio": 0.0411128
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_172_www_rionegro_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.0411128
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_167_www_ambientum_com",
+    "is_catalogue": true,
+    "ratio": 0.0411128
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_21_www_elperiodicodearagon_com",
+    "is_catalogue": true,
+    "ratio": 0.0411128
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_116_www_latribuna_hn",
+    "is_catalogue": true,
+    "ratio": 0.04000164324324324
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_53_www_expreso_ec",
+    "is_catalogue": true,
+    "ratio": 0.037950276923076925
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_404_www_telam_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.037950276923076925
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_315_lasillavacia_com",
+    "is_catalogue": true,
+    "ratio": 0.035239542857142855
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_431_www_elperiodicoextremadura_com",
+    "is_catalogue": true,
+    "ratio": 0.035239542857142855
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_91_www_diario26_com",
+    "is_catalogue": true,
+    "ratio": 0.034420018604651166
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_392_www_muypymes_com",
+    "is_catalogue": true,
+    "ratio": 0.03289024
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_169_www_el_carabobeno_com",
+    "is_catalogue": true,
+    "ratio": 0.03289024
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_320_www_paginasiete_bo",
+    "is_catalogue": true,
+    "ratio": 0.0321752347826087
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_90_peru_com",
+    "is_catalogue": true,
+    "ratio": 0.031490655319148936
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.0313458423295029
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_232_tn_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.0308346
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_44_ladiaria_com_uy",
+    "is_catalogue": true,
+    "ratio": 0.0308346
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_220_www_vanguardia_com_mx",
+    "is_catalogue": true,
+    "ratio": 0.0308346
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_130_www_elperiodicomediterraneo_com",
+    "is_catalogue": true,
+    "ratio": 0.030205322448979593
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_376_www_elpopular_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.030205322448979593
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_229_www_expansion_com",
+    "is_catalogue": true,
+    "ratio": 0.029601216
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_253_www_debate_com_mx",
+    "is_catalogue": true,
+    "ratio": 0.029601216
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_28_www_fayerwayer_com",
+    "is_catalogue": true,
+    "ratio": 0.02846270769230769
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_78_www_listindiario_com",
+    "is_catalogue": true,
+    "ratio": 0.02792567547169811
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_359_www_efeverde_com",
+    "is_catalogue": true,
+    "ratio": 0.027408533333333332
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_256_www_laprovincia_es",
+    "is_catalogue": true,
+    "ratio": 0.027408533333333332
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_226_www_ole_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.026910196363636365
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_317_diariocorreo_pe",
+    "is_catalogue": true,
+    "ratio": 0.026910196363636365
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_165_www_ticbeat_com",
+    "is_catalogue": true,
+    "ratio": 0.026910196363636365
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_401_www_elperiodicodemexico_com",
+    "is_catalogue": true,
+    "ratio": 0.026910196363636365
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_675_www_elespectador_com",
+    "is_catalogue": true,
+    "ratio": 0.025085776271186442
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_257_www_diaridetarragona_com",
+    "is_catalogue": true,
+    "ratio": 0.025085776271186442
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_213_www_hola_com",
+    "is_catalogue": true,
+    "ratio": 0.02426329180327869
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_203_www_que_es",
+    "is_catalogue": true,
+    "ratio": 0.023871948387096775
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_405_www_emol_com",
+    "is_catalogue": true,
+    "ratio": 0.023871948387096775
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_67_www_elpais_cr",
+    "is_catalogue": true,
+    "ratio": 0.02349302857142857
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_430_www_eldiario_ec",
+    "is_catalogue": true,
+    "ratio": 0.02312595
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_324_gestion_pe",
+    "is_catalogue": true,
+    "ratio": 0.02312595
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_288_www_marca_com",
+    "is_catalogue": true,
+    "ratio": 0.022770166153846153
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_71_www_rtve_es",
+    "is_catalogue": true,
+    "ratio": 0.022425163636363637
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_381_www_cuartopoder_es",
+    "is_catalogue": true,
+    "ratio": 0.022425163636363637
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_209_misionesonline_net",
+    "is_catalogue": true,
+    "ratio": 0.022090459701492537
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_86_www_motorpasion_com",
+    "is_catalogue": true,
+    "ratio": 0.02084592676056338
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_373_www_farodevigo_es",
+    "is_catalogue": true,
+    "ratio": 0.02084592676056338
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_287_www_cibercuba_com",
+    "is_catalogue": true,
+    "ratio": 0.020274805479452054
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_249_www_telecinco_es",
+    "is_catalogue": true,
+    "ratio": 0.019734144
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_79_www_laopiniondemurcia_es",
+    "is_catalogue": true,
+    "ratio": 0.018975138461538463
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_299_www_lne_es",
+    "is_catalogue": true,
+    "ratio": 0.018272355555555557
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_641_es_globalvoices_org",
+    "is_catalogue": true,
+    "ratio": 0.018049521951219512
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_58_www_levante_emv_com",
+    "is_catalogue": true,
+    "ratio": 0.01741248
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_157_www_elsoldemexico_com_mx",
+    "is_catalogue": true,
+    "ratio": 0.01662989662921348
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_237_www_cronista_com",
+    "is_catalogue": true,
+    "ratio": 0.015745327659574468
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_245_www_noticiasdenavarra_com",
+    "is_catalogue": true,
+    "ratio": 0.015745327659574468
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_518_www_elcolombiano_com",
+    "is_catalogue": true,
+    "ratio": 0.0145104
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_248_www_telesurtv_net",
+    "is_catalogue": true,
+    "ratio": 0.0145104
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.014249423663613996
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_136_valenciaplaza_com",
+    "is_catalogue": true,
+    "ratio": 0.014231353846153845
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_103_www_elmostrador_cl",
+    "is_catalogue": true,
+    "ratio": 0.01223190743801653
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_189_www_eleconomista_com_mx",
+    "is_catalogue": true,
+    "ratio": 0.011935974193548388
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_429_cadenaser_com",
+    "is_catalogue": true,
+    "ratio": 0.011385083076923076
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_146_www_perfil_com",
+    "is_catalogue": true,
+    "ratio": 0.011298174045801527
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_215_www_lainformacion_com",
+    "is_catalogue": true,
+    "ratio": 0.010725078260869565
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_198_www_eleconomista_es",
+    "is_catalogue": true,
+    "ratio": 0.01064791942446043
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_409_www_proceso_com_mx",
+    "is_catalogue": true,
+    "ratio": 0.01064791942446043
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_263_www_lasexta_com",
+    "is_catalogue": true,
+    "ratio": 0.010571862857142858
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_354_www_lagaceta_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.0102782
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_181_noticiassin_com",
+    "is_catalogue": true,
+    "ratio": 0.010137402739726027
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_267_www_elperiodico_com_es",
+    "is_catalogue": true,
+    "ratio": 0.009548779354838709
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_211_www_elcomercio_com",
+    "is_catalogue": true,
+    "ratio": 0.00925038
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_349_www_eltiempo_com",
+    "is_catalogue": true,
+    "ratio": 0.008409436363636363
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_333_www_elmundo_es",
+    "is_catalogue": true,
+    "ratio": 0.008087763934426229
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_255_elcomercio_pe",
+    "is_catalogue": true,
+    "ratio": 0.007512998984771573
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_63_www_lanacion_com_ar",
+    "is_catalogue": true,
+    "ratio": 0.006884003720930233
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_424_www_lavanguardia_com",
+    "is_catalogue": true,
+    "ratio": 0.006758268493150685
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_multi_un_2",
+    "is_catalogue": true,
+    "ratio": 0.0064414371478361265
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_20_www_clarin_com",
+    "is_catalogue": true,
+    "ratio": 0.005585135094339623
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.005448781438172322
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_341_es_cointelegraph_com",
+    "is_catalogue": true,
+    "ratio": 0.005401681751824818
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_396_www_eldiario_es",
+    "is_catalogue": true,
+    "ratio": 0.004950036120401338
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_es_pseudocrawl-filtered_100_www_aporrea_org",
+    "is_catalogue": true,
+    "ratio": 0.004302502325581396
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_uncorpus",
+    "is_catalogue": true,
+    "ratio": 0.003185652345130893
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_es_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.00209486044510543
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_eu_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_eu_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_eu_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_eu_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_eu_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_eu_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_eu_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_eu_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.401308097099859
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_eu_bsbasque",
+    "is_catalogue": true,
+    "ratio": 0.17787865548091053
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_book_dash_books",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_ester",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_opus100",
+    "is_catalogue": true,
+    "ratio": 0.9209903580794531
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.7706193789534906
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.6847842854995757
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_the_pile_europarl",
+    "is_catalogue": true,
+    "ratio": 0.26357327147213416
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_pseudocrawl-filtered_599_fr_globalvoices_org",
+    "is_catalogue": true,
+    "ratio": 0.198759992
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_pseudocrawl-filtered_530_www_mediapart_fr",
+    "is_catalogue": true,
+    "ratio": 0.124224995
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_bnl_historical_newspapers",
+    "is_catalogue": true,
+    "ratio": 0.11578309308643465
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_project_gutenberg",
+    "is_catalogue": true,
+    "ratio": 0.07543265439405161
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.039369152353545545
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_multi_un_2",
+    "is_catalogue": true,
+    "ratio": 0.037290711487783235
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.029554880264877972
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.027539974970845035
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_pseudocrawl-filtered_550_www_lemonde_fr",
+    "is_catalogue": true,
+    "ratio": 0.0198759992
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_uncorpus",
+    "is_catalogue": true,
+    "ratio": 0.01863489385060286
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_fr_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.007725469040174229
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_fr_hal_archives_ouvertes",
+    "is_catalogue": true,
+    "ratio": 0.001142298804597701
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_indonesian_frog_storytelling_corpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_indonli",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_recibrew",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wikimedia_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_indosum",
+    "is_catalogue": true,
+    "ratio": 0.5811812974154001
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_pseudocrawl-filtered_512_kumparan_com",
+    "is_catalogue": true,
+    "ratio": 0.5699847428571428
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_indonesian_news_corpus",
+    "is_catalogue": true,
+    "ratio": 0.5065166700748491
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.45611408662917513
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_pseudocrawl-filtered_545_www_detik_com",
+    "is_catalogue": true,
+    "ratio": 0.3861186967741935
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.36938400581039005
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_pseudocrawl-filtered_549_www_cnnindonesia_com",
+    "is_catalogue": true,
+    "ratio": 0.22166073333333333
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_pseudocrawl-filtered_572_tirto_id",
+    "is_catalogue": true,
+    "ratio": 0.19305934838709676
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.16477636797275247
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_id_indonesian_news_articles_2017/data",
+    "is_catalogue": true,
+    "ratio": 0.14386445381685353
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_id_indo4b",
+    "is_catalogue": true,
+    "ratio": 0.0024802730704189023
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-as_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-as_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-as_samanantar",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-as_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-as_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-as_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-bn_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_bangla_sentiment_classification_datasets",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-bn_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-bn_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_bengali_question_answering",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_opus100",
+    "is_catalogue": true,
+    "ratio": 0.9410149323863254
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-bn_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.2203836825285136
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.19682022005658575
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.10866661409464581
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-bn_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.058000228512390235
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-bn_bangla_lm",
+    "is_catalogue": true,
+    "ratio": 0.011866490610227681
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-gu_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-gu_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-gu_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-gu_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.6795204624185929
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.39287061194397216
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-gu_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.0824181404545528
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikimedia_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.28686578920899514
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-hi_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.24944507748373507
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.08955924032536582
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_iitb_english_hindi_corpus",
+    "is_catalogue": true,
+    "ratio": 0.018179768567826327
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-hi_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.012460607206912236
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-kn_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-kn_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-kn_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-kn_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-kn_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-kn_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.46821116586767353
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-kn_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.3776887820635821
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-kn_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.2850258958312102
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-kn_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.05151575813416834
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ml_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ml_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ml_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_opus100",
+    "is_catalogue": true,
+    "ratio": 0.8904457671855206
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ml_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.34294428120580045
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ml_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.3100133109130592
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.15386497271770863
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ml_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.03417735065347851
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-mr_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-mr_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-mr_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-mr_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.6779229939948213
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-mr_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.4552692228004415
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.30799222939673965
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-mr_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.0645259303895782
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ne_unsupervised_cross_lingual_representation_learning_at_scale",
+    "is_catalogue": true,
+    "ratio": 0.17394392848407597
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_odiencorp",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-or_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-or_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-or_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.8280659104708811
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-or_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.13628227584720481
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-pa_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-pa_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-pa_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-pa_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.9806784590658266
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.3118100693246757
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-pa_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.06951741178334216
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.6235883379185753
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.21902241587979207
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.20063119313124816
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ta_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.0897865777990773
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ta_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.0211670498746181
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-te_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-te_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-te_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-te_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.27045569079635123
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-te_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.2491604258909765
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_samanantar",
+    "is_catalogue": true,
+    "ratio": 0.2280716352551567
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-te_indic_nlp_corpus",
+    "is_catalogue": true,
+    "ratio": 0.04506814834031475
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_mkb",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ur_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ur_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ur_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_pib",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_opus100",
+    "is_catalogue": true,
+    "ratio": 0.7245270828805661
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_indic-ur_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.380058796163672
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_leipzig_wortschatz_urdu_newscrawl_2016_sentences",
+    "is_catalogue": true,
+    "ratio": 0.18958788207069707
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_urdu-monolingual-corpus",
+    "is_catalogue": true,
+    "ratio": 0.15353615265096746
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_indic-ur_leipzig_wortschatz_urdu-pk_web_2019_sentences",
+    "is_catalogue": true,
+    "ratio": 0.068621604326181
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikimedia_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_project_gutenberg",
+    "is_catalogue": true,
+    "ratio": 0.9383225869181213
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 0.9158869473877828
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.5731250668454502
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.37103425169449733
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_the_pile_europarl",
+    "is_catalogue": true,
+    "ratio": 0.28495888000387143
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_scielo",
+    "is_catalogue": true,
+    "ratio": 0.20914601662488674
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_pt_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.09451598676410387
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.026746113313278166
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_pt_brwac",
+    "is_catalogue": true,
+    "ratio": 0.005732785801499923
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_uit_vsmec",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vietnamese_students_feedback",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vinbigdata_asr_vlsp_2020",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_data_on_covid_19_news_coverage_in_vietnam",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vietnamese_poetry",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.8387487391883336
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wikisource_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.6772915225566059
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.522544886260274
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vntq_corpus_big",
+    "is_catalogue": true,
+    "ratio": 0.42336318261724454
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vinbigdata_mt_vlsp_2020",
+    "is_catalogue": true,
+    "ratio": 0.30979468959856504
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_vi_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.21942826989926878
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vietai_sat",
+    "is_catalogue": true,
+    "ratio": 0.1480497513729189
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_vinbigdata_monolingual_vlsp_2020",
+    "is_catalogue": true,
+    "ratio": 0.02910104704407659
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_vi_binhvq_news_corpus",
+    "is_catalogue": true,
+    "ratio": 0.003621068428232963
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_bloom",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wikiquote_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wikivoyage_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wikiversity_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wikibooks_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wikinews_filtered/data",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_ted_talks_iwslt",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_opus100",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_project_gutenberg",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh_wiktionary_filtered/data",
+    "is_catalogue": true,
+    "ratio": 0.42884143944097336
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_open_subtitles",
+    "is_catalogue": true,
+    "ratio": 0.25837606221260134
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_multi_un_2",
+    "is_catalogue": true,
+    "ratio": 0.16806684857829332
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_uncorpus",
+    "is_catalogue": true,
+    "ratio": 0.10054042772514918
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_du_reader",
+    "is_catalogue": true,
+    "ratio": 0.06777830327389246
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh_wudaocorpora",
+    "is_catalogue": true,
+    "ratio": 0.0011316355476089796
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh-CN_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh-HK_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zh-TW_multilingual_knowledge_questions_answers",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zhs_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "bigscience-catalogue-lm-data/lm_zht_qedcorpus",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh-cn_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.48672273852595066
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_zh-tw_wikipedia/data",
+    "is_catalogue": true,
+    "ratio": 0.4864804748063439
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_code_stackexchange/data",
+    "is_catalogue": true,
+    "ratio": 0.03152089779161643
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_code_github-no-gpl",
+    "is_catalogue": true,
+    "ratio": 0.005858284869490684
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-sw_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-yo_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-rw_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-xh_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ig_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-zu_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-sn_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-lg_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-wo_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-rn_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-fon_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-nso_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ln_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-tn_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-tw_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ny_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-st_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ts_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ak_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-bm_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-ki_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  },
+  {
+    "dataset_path": "/gpfswork/rech/six/uty16tp/dataset/tokenization/bigscience-catalogue-lm-data/lm_nigercongo-tum_aggregated",
+    "is_catalogue": true,
+    "ratio": 1.0
+  }
+]
