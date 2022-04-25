@@ -1,0 +1,66 @@
+[
+  {
+    "uid": "bbc_swahili",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.bbc.com/swahili"
+    }
+  },
+  {
+    "uid": "bbc_gahuza",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.bbc.com/gahuza"
+    }
+  },
+  {
+    "uid": "bbc_igbo",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.bbc.com/igbo"
+    }
+  },
+  {
+    "uid": "bbc_yoruba",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.bbc.com/yoruba"
+    }
+  },
+  {
+    "uid": "global_voices_yoruba",
+    "type": "primary",
+    "description": {
+      "homepage": "https://yo.globalvoices.org"
+    }
+  },
+  {
+    "uid": "global_voices_igbo",
+    "type": "primary",
+    "description": {
+      "homepage": "https://ig.globalvoices.org"
+    }
+  },
+  {
+    "uid": "dw_swahili",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.dw.com/sw"
+    }
+  },
+  {
+    "uid": "mwananchi_",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.mwananchi.co.tz"
+    }
+  },
+  {
+    "uid": "voa_swahili",
+    "type": "primary",
+    "description": {
+      "homepage": "https://www.voaswahili.com"
+    }
+  }
+
+]
