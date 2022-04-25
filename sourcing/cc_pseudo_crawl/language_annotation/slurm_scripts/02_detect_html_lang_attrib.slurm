@@ -15,13 +15,13 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-DATA_TOOLING_REPO=$WORK/repos/sync_data_tooling/data_tooling
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 DATASET_PATH=/gpfsscratch/rech/six/urd43gx/crawl/shards/shard_"$SLURM_ARRAY_TASK_ID"
 SAVE_DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/fasttext_annotation/seeds_batch_1/datasets-lang-annotation/bigscience-catalogue-data
 SAVE_DATASET_PATH=$SAVE_DATASET_DIR/seed_id="$SLURM_ARRAY_TASK_ID"
 echo $DATASET_PATH
-pushd $DATA_TOOLING_REPO
 
 mkdir -p $SAVE_DATASET_DIR
 

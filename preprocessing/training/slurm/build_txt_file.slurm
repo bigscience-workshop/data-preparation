@@ -14,10 +14,10 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling # Debug deepspeed temporarily
 
-CATALOGUE_DATA_REPO=$WORK/code/big_science/catalogue_data
+TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
+pushd $TRAINING_DATA_PREPARATION_REPO
 
 export HF_DATASETS_OFFLINE=1
-pushd $CATALOGUE_DATA_REPO
 
 python build_txt_file.py \
   --dataset-path /gpfsscratch/rech/six/commun/tokenizer/dataset/tokenization_dataset_v2 \

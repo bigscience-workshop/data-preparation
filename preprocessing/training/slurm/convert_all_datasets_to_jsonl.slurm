@@ -15,8 +15,8 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling # Debug deepspeed temporarily
 
-CATALOGUE_DATA_REPO=$WORK/code/big_science/catalogue_data
-pushd $CATALOGUE_DATA_REPO
+TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
+pushd $TRAINING_DATA_PREPARATION_REPO
 
 # ===== GET DATASET ======
 

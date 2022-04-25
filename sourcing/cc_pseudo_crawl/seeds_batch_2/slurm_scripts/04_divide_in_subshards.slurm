@@ -16,12 +16,13 @@ source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
 CC_INDEX_FOLDER=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/cc  #TODO change path if necessary
-DATA_TOOLING_REPO=$WORK/code/big_science/data_tooling  #TODO change path if necessary
+
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 DATASET_PATH=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/datasets-redownload/bigscience-catalogue-data/pseudo_crawl_seed--"$SLURM_ARRAY_TASK_ID"--"$SLURM_ARRAY_TASK_COUNT"
 SAVE_DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/datasets-divide-in-subshards/bigscience-catalogue-data
 echo $DATASET_PATH
-pushd $DATA_TOOLING_REPO
 
 mkdir -p $SAVE_DATASET_DIR
 

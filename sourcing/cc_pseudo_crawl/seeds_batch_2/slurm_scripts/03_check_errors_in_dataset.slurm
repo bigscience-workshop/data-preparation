@@ -14,12 +14,11 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-DATA_TOOLING_REPO=$WORK/repos/sync_data_tooling/data_tooling #TODO change path if necessary
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/datasets-redownload/bigscience-catalogue-data
 echo $DATASET_DIR
-pushd $DATA_TOOLING_REPO
-
 
 export HF_DATASETS_OFFLINE=1
 export HF_DATASETS_CACHE=$SCRATCH/to_delete

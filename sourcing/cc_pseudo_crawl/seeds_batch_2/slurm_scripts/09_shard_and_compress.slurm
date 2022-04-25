@@ -16,11 +16,11 @@ source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
 CC_INDEX_FOLDER=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/cc  #TODO change path if necessary
-DATA_TOOLING_REPO=$WORK/code/big_science/data_tooling  #TODO change path if necessary
 
-pushd $DATA_TOOLING_REPO
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
-SEED_ID=$(python cc_pseudo_crawl/python_scripts/load_all_seed_ids.py --seed-path "$DATA_TOOLING_REPO"/cc_pseudo_crawl/seeds_batch_2/sourcing_sheet_seeds/seeds.csv --seed-index $SLURM_ARRAY_TASK_ID)
+SEED_ID=$(python cc_pseudo_crawl/python_scripts/load_all_seed_ids.py --seed-path "$DATA_SOURCING_REPO"/cc_pseudo_crawl/seeds_batch_2/sourcing_sheet_seeds/seeds.csv --seed-index $SLURM_ARRAY_TASK_ID)
 # SEED_IDS=(
 # 689
 # 510
