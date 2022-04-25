@@ -1,0 +1,10 @@
+uid,type,description,link,url_path_prefix,url_host_name,url_host_registered_domain,url_surtkey,id
+bbc_swahili,primary,{'homepage': 'https://www.bbc.com/swahili'},https://www.bbc.com/swahili,/swahili,www.bbc.com,bbc.com,"com,bbc)/swahili",698
+bbc_gahuza,primary,{'homepage': 'https://www.bbc.com/gahuza'},https://www.bbc.com/gahuza,/gahuza,www.bbc.com,bbc.com,"com,bbc)/gahuza",699
+bbc_igbo,primary,{'homepage': 'https://www.bbc.com/igbo'},https://www.bbc.com/igbo,/igbo,www.bbc.com,bbc.com,"com,bbc)/igbo",700
+bbc_yoruba,primary,{'homepage': 'https://www.bbc.com/yoruba'},https://www.bbc.com/yoruba,/yoruba,www.bbc.com,bbc.com,"com,bbc)/yoruba",701
+global_voices_yoruba,primary,{'homepage': 'https://yo.globalvoices.org'},https://yo.globalvoices.org/,/,yo.globalvoices.org,globalvoices.org,"org,globalvoices,yo)/",702
+global_voices_igbo,primary,{'homepage': 'https://ig.globalvoices.org'},https://ig.globalvoices.org/,/,ig.globalvoices.org,globalvoices.org,"org,globalvoices,ig)/",703
+dw_swahili,primary,{'homepage': 'https://www.dw.com/sw'},https://www.dw.com/sw,/sw,www.dw.com,dw.com,"com,dw)/sw",704
+mwananchi_,primary,{'homepage': 'https://www.mwananchi.co.tz'},https://www.mwananchi.co.tz/,/,www.mwananchi.co.tz,mwananchi.co.tz,"tz,co,mwananchi)/",705
+voa_swahili,primary,{'homepage': 'https://www.voaswahili.com'},https://www.voaswahili.com/,/,www.voaswahili.com,voaswahili.com,"com,voaswahili)/",706
