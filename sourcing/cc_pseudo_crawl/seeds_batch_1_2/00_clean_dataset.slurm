@@ -15,15 +15,15 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-DATA_TOOLING_REPO=$WORK/code/big_science/data_tooling
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 DATASET_PATH=$six_ALL_CCFRSCRATCH/pseudo_crawl/hub/pseudo_crawl
 SAVE_DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_1_2/datasets-clean/bigscience-catalogue-data
 echo $DATASET_PATH
-pushd $DATA_TOOLING_REPO
 
 SEED_ID=$(python cc_pseudo_crawl/python_scripts/load_all_seed_ids.py \
-  --seed-paths "$DATA_TOOLING_REPO"/cc_pseudo_crawl/seeds_batch_1/sourcing_sheet_seeds/seeds.csv,"$DATA_TOOLING_REPO"/cc_pseudo_crawl/seeds_batch_2/sourcing_sheet_seeds/seeds.csv \
+  --seed-paths "$DATA_SOURCING_REPO"/cc_pseudo_crawl/seeds_batch_1/sourcing_sheet_seeds/seeds.csv,"$DATA_SOURCING_REPO"/cc_pseudo_crawl/seeds_batch_2/sourcing_sheet_seeds/seeds.csv \
   --seed-index $SLURM_ARRAY_TASK_ID \
 )
 

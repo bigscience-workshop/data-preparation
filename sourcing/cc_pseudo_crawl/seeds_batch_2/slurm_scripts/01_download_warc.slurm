@@ -17,8 +17,9 @@ conda activate thomas_data_tooling
 
 CC_INDEX_FOLDER=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/cc
 SAVE_DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_2/datasets
-DATA_TOOLING_REPO=$WORK/repos/sync_data_tooling/data_tooling
-pushd $DATA_TOOLING_REPO
+
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 mkdir -p $SAVE_DATASET_DIR
 

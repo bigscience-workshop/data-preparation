@@ -14,14 +14,15 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling # Debug deepspeed temporarily
 
-CATALOGUE_DATA_REPO=$WORK/code/big_science/catalogue_data
-DATASET_RATIOS_FILE=$CATALOGUE_DATA_REPO/tokenizer_dataset_ratios.json
+TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
+pushd $TRAINING_DATA_PREPARATION_REPO
+
+DATASET_RATIOS_FILE=$TRAINING_DATA_PREPARATION_REPO/tokenizer_dataset_ratios.json
 
 SAVE_DATASET_PATH=$six_ALL_CCFRSCRATCH/tokenizer/dataset/tokenization_dataset_v3
 mkdir -p $SAVE_DATASET_PATH
 
 export HF_DATASETS_OFFLINE=1
-pushd $CATALOGUE_DATA_REPO
 
 python aggregate_datasets.py \
     --dataset_ratios_path $DATASET_RATIOS_FILE \

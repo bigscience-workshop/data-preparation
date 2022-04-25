@@ -1,5 +1,5 @@
-# catalogue_data
-Scripts to prepare catalogue data.
+# Obtaining a training dataset
+Scripts to prepare training dataset.
 
 ## Setup
 Clone this repo.

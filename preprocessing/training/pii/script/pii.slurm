@@ -31,9 +31,8 @@ export HF_DATASETS_CACHE=$SCRATCH/to_delete
 
 conda activate lucile-pii
 
-CATALOGUE_DATA_REPO="/gpfsdswork/projects/rech/six/uue59kq/repos/catalogue_data"
-
-cd $CATALOGUE_DATA_REPO
+TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
+pushd $TRAINING_DATA_PREPARATION_REPO
 
 python pii/pii_processor.py \
     --save-to-json \

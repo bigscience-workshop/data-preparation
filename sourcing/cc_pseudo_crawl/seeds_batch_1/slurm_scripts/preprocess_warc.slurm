@@ -16,12 +16,14 @@ source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling # Debug deepspeed temporarily
 
 CC_INDEX_FOLDER=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_1/cc
-DATA_TOOLING_REPO=$WORK/repos/sync_data_tooling/data_tooling
+
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
+
 DATASET_PATH=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_1/datasets-divide-in-subshards/bigscience-catalogue-data/pseudo_crawl_seed--"$SLURM_ARRAY_TASK_ID"--"$SLURM_ARRAY_TASK_COUNT"
 SAVE_DATASET_DIR=$six_ALL_CCFRSCRATCH/pseudo_crawl/seeds_batch_1/datasets-preprocessed/bigscience-catalogue-data
 SAVE_DATASET_PATH=$SAVE_DATASET_DIR/pseudo_crawl_seed--"$SLURM_ARRAY_TASK_ID"--"$SLURM_ARRAY_TASK_COUNT"
 echo $DATASET_PATH
-pushd $DATA_TOOLING_REPO
 
 mkdir -p $SAVE_DATASET_DIR
 

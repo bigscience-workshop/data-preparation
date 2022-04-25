@@ -34,8 +34,8 @@ PREPROCESSING_NUM_WORKERS=80
 NUM_FILES_TO_PROCESS=1
 SAVE_BATCH_SIZE=1000
 
-DATA_TOOLING_REPO=$WORK/repos/sync_data_tooling/data_tooling
-pushd $DATA_TOOLING_REPO
+DATA_SOURCING_REPO=$WORK/code/big_science/data-preparation/sourcing
+pushd $DATA_SOURCING_REPO
 
 echo "Args:"
 echo "    task_id=${SLURM_ARRAY_TASK_ID}"
