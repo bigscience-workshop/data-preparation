@@ -6,11 +6,11 @@ This a a PoC developed on the road to have a look at the operations done by the 
 
 You will first need to update the `backend/.streamlit/config.toml` file. The `DATASET_DIR_PATH_BEFORE_CLEAN_SELECT` variable must indicate the path to the folder containing the artifacts created by the `checks-save-path`` argument of clean.py. 
 
-For example you should put `DATASET_DIR_PATH_BEFORE_CLEAN_SELECT = "/home/user/data"` for:
+For example you should put `DATASET_DIR_PATH_BEFORE_CLEAN_SELECT = "$HOME/data"` for:
 ```bash
 python clean.py \
     [...] 
-    --checks-save-path /home/user/data/clean
+    --checks-save-path $HOME/data/clean
 ```
 
 Then after having installed the requirements you can launch the app, for example with the command:

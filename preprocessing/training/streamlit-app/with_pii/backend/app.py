@@ -7,7 +7,7 @@ import pandas as pd
 import streamlit as st
 from datasets import load_from_disk, load_dataset
 
-DATASET_DIR_PATH_BEFORE_CLEAN_SELECT = os.getenv("DATASET_DIR_PATH_BEFORE_CLEAN_SELECT") #  "~/data"
+DATASET_DIR_PATH_BEFORE_CLEAN_SELECT = os.getenv("DATASET_DIR_PATH_BEFORE_CLEAN_SELECT")
 DATASET_DIR_PATH_PII = os.getenv("DATASET_DIR_PATH_PII")
 OPERATION_TYPES = [
     "Applied filter",
