@@ -1,0 +1,19 @@
+tokenization: "character"   # character, punctuation or space
+window_size: 4              # size of the token window
+hamming_distance: 7         # similarity threshold out of 64 bits
+num_blocks: 8               # must be larger than the hamming_distance
+ignore_punctuation: true    # ignore punctuation when hashing, cannot be true when punctuation is used for tokenization
+lowercase: true             # lowercase the text when hashing
+text_column: "text"         # column name for the text to be hashed
+index_column: "id"          # column name for the index
+num_proc: 80                # number of processes to run when hashing
+load_dataset:
+  path: "oscar-corpus/OSCAR-2109"
+  name: "deduplicated_gl"
+  split: "train"
+  use_auth_token: true
+load_from_disk:
+  path: null
+  gcs: null
+cache: "outputs/gl_cache"
+output: "outputs/gl"
