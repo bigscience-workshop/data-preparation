@@ -1,0 +1,19 @@
+tokenization: "character" # character, punctuation or space
+window_size: 6 # size of the token window, average arabic word length is 5
+hamming_distance: 4 # similarity threshold out of 64 bits
+num_blocks: 6 # must be larger than the hamming_distance
+ignore_punctuation: true # ignore punctuation when hashing, cannot be true when punctuation is used for tokenization
+lowercase: true # lowercase the text when hashing
+text_column: "text" # column name for the text to be hashed
+index_column: "id" # column name for the index
+num_proc: 96 # number of processes to run when hashing
+load_dataset:
+  path: null
+  name: null
+  split: null
+  use_auth_token: false
+load_from_disk:
+  path: "data/oscar_filtered_final/bn"
+  gcs: null
+cache: "outputs/bn_cache"
+output: "outputs/bn"
