@@ -42,16 +42,26 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
 
     Link to documentation to reproduce this step: #TODO isolate relevant information from `sourcing/cc_pseudo_crawl/seeds_batch_1/README.md` and probably clean `data-preparation/sourcing/cc_pseudo_crawl/seeds_batch_1/sourcing_sheet_seeds`
 
-1.  **Step 1**: Request Common Crawl to retrieve the WARC files identified in step 0
+-  **Step 1**: Request Common Crawl to retrieve the WARC files identified in step 0
 
     a. Download the WARCs in shards
 
-        The idea is to divide the list of WARCS to be recovered into 10 shards so that 10 different jobs can be used to recover the files listed in one of the shards.
+    The idea is to divide the list of WARCS to be recovered into 10 shards so that 10 different jobs can be used to recover the files listed in one of the shards.
+        
+    Jobs used:
+    - 01_download_warc.slurm
+    - 02_download_warc_trial_4.slurm
+    - 03_download_warc_trial_5.slurm
+    - 04_download_warc_too_big.slurm
 
-        Jobs used:
-            - 01_download_warc.slurm
-            - 02_download_warc_trial_4.slurm
-            - 03_download_warc_trial_5.slurm
-            - 04_download_warc_too_big.slurm
+    b. Retrying failed downloads for some WARC files
 
-    b. 
+    The downpload of some WARCS files within a shard in step a. may have failed for several reasons (timeout, etc). A second script was therefore run to retry the download of only those files that had not been retrieved so far. 
+
+    Job used:
+    - 05_redownload_warc.slurm
+
+    c. Verification that all WARC files have been downlaoded
+
+    Job used:
+    - 06_check_errors_in_dataset.slurm
