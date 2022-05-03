@@ -90,10 +90,55 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
     - 10_divide_in_subshards_1000.slurm
     - 11_shard_by_seed_id.slurm
     - 12_merge_seed_shards.slurm
-    - 13_shard_and_compress.slurm
 
+-  **Step 5**: Pushing a light version of the dataset onto the hub
+
+    Job used:
+    - 13_shard_and_compress.slurm
 
 
 ### Batch 2
 
-The steps followed for batch 2 are identical to those followed for batch 1. The corresponding slurm scripts have a slightly different numbering because 1) we had already learned from the difficulties of batch 1 and 2) there were far fewer WARC files involved
+The steps followed for batch 2 are identical to those followed for batch 1. The corresponding slurm scripts have a slightly different numbering because 1) we had already learned from the difficulties of batch 1 and 2) there were far fewer WARC's extracts involved
+
+
+- **Step 0**: TODO
+
+-  **Step 1**: Request Common Crawl to retrieve the extracts from WARC files identified in step 0
+
+    a. Download the WARC's extracts in shards
+        
+    Job used:
+    - 01_download_warc.slurm
+
+    b. Retrying failed downloads for some WARC's extracts 
+
+    Job used:
+    - 02_redownload_warc.slurm
+    - 02b_redownload_warc.slurm
+
+    c. Verification that all WARC's extracts have been downlaoded
+
+    Job used:
+    - 03_check_errors_in_dataset.slurm
+
+-  **Step 2**: Process the  WARC's extracts to 1) isolate the HTML code of different web pages and 2) to retrieve outgoing links from HTML web pages
+
+    Job used:
+    - 05_preprocess_warc.slurm
+
+-  **Step 3**: Extract text and metadata from the HTML code
+
+    Job used:
+    - 06_extract_text_and_html_metadata.slurm
+
+-  **Step 4**: Sharding the dataset by seed id
+
+    Jobs used:
+    - 07_shard_by_seed_id.slurm
+    - 08_merge_seed_shards.slurm
+
+-  **Step 5**: Pushing a light version of the dataset onto the hub
+    Jobs used:
+    - 09_shard_and_compress.slurm
+    - 10_push_to_hub.slurm
