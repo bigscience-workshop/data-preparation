@@ -71,3 +71,7 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
 -  **Step 3**: Extract text and metadata from the HTML code
 
 -  **Step 4**: Sharding the dataset by seed id
+
+### Batch 2
+
+The steps followed for batch 2 are identical to those followed for batch 1. The corresponding slurm scripts have a slightly different numbering because 1) we had already learned from the difficulties of batch 1 and 2) there were far fewer WARC files involved
