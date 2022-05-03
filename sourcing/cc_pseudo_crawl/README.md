@@ -65,3 +65,9 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
 
     Job used:
     - 06_check_errors_in_dataset.slurm
+
+-  **Step 2**: Process the WARCs to 1) isolate the HTML code and 2) to retrieve outgoing links from HTML web pages
+
+-  **Step 3**: Extract text and metadata from the HTML code
+
+-  **Step 4**: Sharding the dataset by seed id
