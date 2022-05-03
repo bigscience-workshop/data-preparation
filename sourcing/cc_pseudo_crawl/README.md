@@ -1,6 +1,6 @@
 # Pseudo-crawl dataset
 
-The scripts in this folder are used to build up a text dataset from the web pages of several domain names.
+The scripts in this folder are used to build up a text dataset from the web pages of several domain names from original common crawl WARC files.
 
 ## Context
 
