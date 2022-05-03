@@ -70,11 +70,29 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
 
 -  **Step 2**: Process the  WARC's extracts to 1) isolate the HTML code of different web pages and 2) to retrieve outgoing links from HTML web pages
 
+    The WARC extracts obtained so far are still in a compressed format and contain several types of information. In this step, we decompressed the extracts whose crawled content corresponded to HTML code and we isolated this HTML code in text format. We then processed this HTML code in order to list all the outgoing links appearing in this code. In the end we never reused these lists of outgoing links.
 
+    Job used:
+    - 08_preprocess_warc.slurm
 
 -  **Step 3**: Extract text and metadata from the HTML code
 
+    In this step we extracted the text and various metadata from the HTML code using a parser developed by the modeling-metadata BigScience Working Group.
+
+    Job used:
+    - 09_extract_text_and_html_metadata.slurm
+
 -  **Step 4**: Sharding the dataset by seed id
+
+    In view of the size of the dataset obtained, it was desirable to store it in a sharded format. We wanted the first level of sharding to correspond to the seed identifiers, i.e. only the content corresponding to a seed could be found in a shard. We then had to use a finer sharding so that each shard in compressed format is about 1GB.
+
+    Jobs used:
+    - 10_divide_in_subshards_1000.slurm
+    - 11_shard_by_seed_id.slurm
+    - 12_merge_seed_shards.slurm
+    - 13_shard_and_compress.slurm
+
+
 
 ### Batch 2
 
