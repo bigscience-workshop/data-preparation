@@ -14,7 +14,7 @@ In the `python_scripts` folder are the python scripts that are called by the scr
 
 Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/python) developed to identify the languages of the texts.
 
-## Pipeline
+## Pseudo Crawl dataset creation pipeline
 
 ### Batch 1
 
@@ -142,3 +142,29 @@ The steps followed for batch 2 are identical to those followed for batch 1. The 
     Jobs used:
     - 09_shard_and_compress.slurm
     - 10_push_to_hub.slurm
+
+### Batch 1 & 2
+
+Finally, we have applied specific cleaning / deduplication steps to the pseudo-crawl
+
+1. We have removed content in the texts that is repeated a lot between examples of the same seed id. The idea here was to remove website templates
+    
+    Job used:
+    - 00_clean_dataset.slurm
+
+2. We removed examples that were duplicated identically
+    
+    Job used:
+    - 01_exact_deduplicates.slurm
+
+3.  We deduplicated the exactly identical lines within a single example.
+
+    python script used:
+    - doc_by_doc_line_dedup.py
+
+### Analysis scripts
+
+In addition to the pipeline to create the dataset, we also produced some scripts to analyse the contents of the dataset. In particular:
+
+- Several language detection methods: language_annotation folder
+- A script to find out the number of examples of various types: `get_stats.py`
