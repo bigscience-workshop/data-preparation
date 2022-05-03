@@ -20,7 +20,7 @@ Finally, the `language_annotation` folder gathers all the scripts (bash/slurm/py
 
 - **Step 0**: Create a seed-to-WARC's extract mapping using the index from Common Crawl ([CC](https://commoncrawl.org/)).
 
-  Cross the list of domains names with the web pages available on the CC dumps of 2021 to obtain a mapping.
+  Cross the list of domains names with the web pages available on the CC dumps of 2020-2021 to obtain a mapping.
 
   The WARC format is an archive format that allows to concatenate in a single file several information related to a crawled web page. So in this step we want to: list all the urls belonging to our seeds that have been saved by Common Crawl and then identify where the crawl of each of these urls is stored - i.e. in which WARC file and between which offsets.
 
