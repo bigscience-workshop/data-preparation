@@ -4,11 +4,11 @@
 #SBATCH --ntasks-per-node=1                                             # crucial - only 1 task per dist per node!
 #SBATCH --cpus-per-task=4                                               # number of cores per tasks
 #SBATCH --hint=nomultithread                                            # we get physical cores not logical
-#SBATCH --time 02:00:00                                                 # maximum execution time (HH:MM:SS)
+#SBATCH --time 06:00:00                                                 # maximum execution time (HH:MM:SS)
 #SBATCH --output=/gpfsdswork/projects/rech/six/uue59kq/logs/download_ds/%x-%j.out   # output file name
 #SBATCH --account=six@cpu                                               # account
 #SBATCH -p compil                                                       # partition with internet
-#SBATCH --array=0
+#SBATCH --array=0-497
 
 set -x -e
 
