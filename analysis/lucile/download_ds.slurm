@@ -525,4 +525,4 @@ echo "SLURM_ARRAY_TASK_ID "$SLURM_ARRAY_TASK_ID
 DATASETS_DIR=/gpfsscratch/rech/ajs/uue59kq/bigscience_corpus
 pushd $DATASETS_DIR
 
-git clone https://huggingface.co/datasets/bigscience-catalogue-data/$DATASET_NAME
+git clone https://huggingface.co/datasets/bigscience-catalogue-lm-data/$DATASET_NAME
