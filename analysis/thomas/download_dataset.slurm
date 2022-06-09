@@ -14,6 +14,9 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
+module load git-lfs
+module load unrar
+
 DATA_PREPARATION_PATH=/gpfswork/rech/six/uty16tp/code/big_science/data-preparation
 
 pushd $DATA_PREPARATION_PATH/analysis/thomas
