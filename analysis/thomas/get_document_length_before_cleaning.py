@@ -37,6 +37,7 @@ def main():
     dataset_sizes = {}
     for dataset_name in all_dataset_names:
         normalised_dataset_name = normalise_dataset_name(dataset_name)
+        print(f"Processing {normalised_dataset_name}")
         ds = load_dataset(dataset_name, split="train", use_auth_token=True, ignore_verifications=True)
         bytes_per_sample = ds.map(get_text_byte, num_proc=args.num_proc, batched=True)
         save_path = Path(args.output_prefix) / normalised_dataset_name
