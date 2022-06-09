@@ -9,6 +9,11 @@
 #SBATCH --account=six@cpu                                               # account
 #SBATCH --partition=compil
 
+  #SBATCH --account=six@a100
+  #SBATCH --constraint=a100
+  #SBAYCJ --partition=gpu_p5
+  #SBATCH --gres=gpu:1
+
 set -x -e
 
 source $six_ALL_CCFRWORK/start-prod
