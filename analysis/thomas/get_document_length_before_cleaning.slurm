@@ -18,6 +18,7 @@ TRAINING_CSV_PATH=$DATA_PREPARATION_PATH/preprocessing/training/training_v2.csv
 
 pushd $DATA_PREPARATION_PATH/analysis/thomas
 
+export HF_DATASETS_OFFLINE=1
 python get_document_length_before_cleaning.py
     --num-proc 40
     --training-csv-path
