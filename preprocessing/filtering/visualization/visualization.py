@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(1, os.path.join(sys.path[0], ".."))
-# Append the path of the ac_dc directory to the python path
+# Append the path of the parent directory to the python path
 # to find the files filtering.py and languages_id.py in the parent directory
 sys.path.append(str(Path(sys.path[0]).parent.absolute().parent.absolute()))
 
