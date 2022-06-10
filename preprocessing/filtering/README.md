@@ -1,6 +1,6 @@
 ## Big Science - Automated Classification & Dataset Curation - AC/DC
 
-This is the data filtering code for BigScience.
+This is the data filtering code used to build the BigScience Corpus.
 
 The supported languages are defined in the file [languages_id.py](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/filtering/languages_id.py).
 
