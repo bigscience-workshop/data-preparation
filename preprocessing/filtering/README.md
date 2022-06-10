@@ -1,4 +1,4 @@
-## Big Science - Automated Classification & Dataset Curation - AC/DC
+## Data Filtering and Data Deduplication of the BigScience Corpus
 
 This is the data filtering code used to build the BigScience Corpus.
 
