@@ -7,7 +7,7 @@
 #SBATCH --time 06:00:00                                                 # maximum execution time (HH:MM:SS)
 #SBATCH --output=/gpfsdswork/projects/rech/six/uue59kq/logs/count_len_doc/%x-%j.out   # output file name
 #SBATCH --account=six@cpu                                               # account
-#SBATCH -p compil                                                       # partition with internet
+#SBATCH -p cpu_p1                                                       # partition with internet
 #SBATCH --array=0-497
 
 set -x -e
@@ -521,12 +521,12 @@ DATASET_NAME=${LIST_DATASET[$SLURM_ARRAY_TASK_ID]}
 echo "DATASET_NAME "$DATASET_NAME
 echo "SLURM_ARRAY_TASK_ID "$SLURM_ARRAY_TASK_ID
 
-DATASETS_DIR=/gpfsscratch/rech/ajs/uue59kq/bigscience_corpus
-METADATA_DATASETS_DIR=/gpfsscratch/rech/ajs/uue59kq/bigscience_corpus_doc_length
-WORKING_DIR=/gpfswork/rech/six/uue59kq/repos/data-preparation
+DATASETS_DIR=/gpfsscratch/rech/six/uue59kq/bigscience_corpus
+METADATA_DATASETS_DIR=/gpfsscratch/rech/six/uue59kq/bigscience_corpus_doc_length
+WORKING_DIR=/gpfswork/rech/six/uue59kq/repos/data-preparation/analysis/document-sizes/python-scripts
 pushd $WORKING_DIR
 
-python analysis/lucile/count_len_doc.py \
+python count_len_doc.py \
     --dataset-path $DATASETS_DIR/$DATASET_NAME \
     --save-path $METADATA_DATASETS_DIR/$DATASET_NAME \
     --num-proc 4 \
