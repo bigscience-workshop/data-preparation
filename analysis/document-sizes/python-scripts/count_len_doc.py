@@ -1,9 +1,9 @@
 import argparse
-from pathlib import Path
 import logging
+from pathlib import Path
 
+from datasets import DatasetDict, load_dataset
 from datasets.utils.logging import set_verbosity_info
-from datasets import load_dataset, DatasetDict
 
 set_verbosity_info()
 logger = logging.getLogger(__name__)
