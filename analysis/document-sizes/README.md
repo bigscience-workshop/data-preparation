@@ -1,7 +1,14 @@
 ## 1. Download all the datasets from the hub
 
+This step aims to download all the datasets constituting the BigScience corpus.
+
+For this, we used a slurm script [`slurm-scrips/download_ds.slurm`](slurm-scrips/download_ds.slurm). If you do not have slurm, the downloading script is[`python-scripts/download_ds.py](python-scripts/download_ds.py).
+
 ## 2. Compute the size of each document
 
+The next step is to create a metadata dataset for which we will store only the length of the associated text for each example. 
+
+For this, we also used a slurm script [`slurm-scrips/count_len_doc.slurm`](slurm-scrips/count_len_doc.slurm). If you do not have slurm, the downloading script is[`python-scripts/count_len_doc.py](python-scripts/count_len_doc.py).
 ## 3. Compute some statistics per datasets and group them by language
 
 ```bash
