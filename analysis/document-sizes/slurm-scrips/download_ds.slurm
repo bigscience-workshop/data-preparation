@@ -522,7 +522,7 @@ echo "DATASET_NAME "$DATASET_NAME
 echo "SLURM_ARRAY_TASK_ID "$SLURM_ARRAY_TASK_ID
 
 # ===== PUSH TO HUB ======
-DATASETS_DIR=/gpfsscratch/rech/ajs/uue59kq/bigscience_corpus
+DATASETS_DIR=/gpfsscratch/rech/six/uue59kq/bigscience_corpus
 pushd $DATASETS_DIR
 
 git clone https://huggingface.co/datasets/bigscience-catalogue-lm-data/$DATASET_NAME
