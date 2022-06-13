@@ -11,10 +11,7 @@ The next step is to create a metadata dataset for which we will store only the l
 For this, we also used a slurm script [`slurm-scrips/count_len_doc.slurm`](slurm-scrips/count_len_doc.slurm). If you do not have slurm, the downloading script is[`python-scripts/count_len_doc.py](python-scripts/count_len_doc.py).
 ## 3. Compute some statistics per datasets and group them by language
 
-```bash
-export DATA_DIR=/home/lucile_huggingface_co/data
-python analysis/document-sizes/python-scripts/compute_stats.py
-```
+Example of bash command to generate the necessary statistics of the plots in step 4.
 ```bash
 python analysis/document-sizes/python-scripts/compute_stats.py \
     --bigscience_corpus_doc_length_dir "/home/lucile_huggingface_co/data/bigscience_corpus_doc_length" \
@@ -22,6 +19,8 @@ python analysis/document-sizes/python-scripts/compute_stats.py \
 ```
 
 ## 4. Produce plots
+
+Example of bash commands to generate all the plots.
 
 Plots per dataset and per language:
 ```bash
