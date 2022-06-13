@@ -2,7 +2,7 @@
 
 This step aims to download all the datasets constituting the BigScience corpus.
 
-For this, we used a slurm script [`slurm-scrips/download_ds.slurm`](slurm-scrips/download_ds.slurm). If you do not have slurm, the downloading script is[`python-scripts/download_ds.py](python-scripts/download_ds.py).
+For this, we used a slurm script [`slurm-scrips/download_ds.slurm`](slurm-scrips/download_ds.slurm). If you do not have slurm, you can still take inspiration from it to download all the datasets. [`python-scripts/get_list_of_datasets.py](python-scripts/get_list_of_datasets.py) was used to get the list of all the sub datasets composing the BigScience corpus (the resulting list is hardcoded in [`slurm-scrips/download_ds.slurm`](slurm-scrips/download_ds.slurm)).
 
 ## 2. Compute the size of each document
 
