@@ -6,7 +6,7 @@ Code used for sourcing and pre-processing datasets for BigScience project
 
 # [Filtering library used to filter OSCAR](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/filtering)
 
-# [Code used to obtain a training dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training)
+# [Code used to obtain a run preprocessing pipeline on crowdsourced dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training)
 
 # [Code used for the tokenizer](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/tokenizer)
 
