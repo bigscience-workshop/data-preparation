@@ -442,10 +442,10 @@ class Filtering:
             return 0
         freq_character_ngrams = list(freq_character_ngrams.values())
         freq_character_ngrams = sorted(freq_character_ngrams, reverse=True)
-        val_less_than_one = len([el for el in freq_character_ngrams if el > 1])
+        val_one = len([el for el in freq_character_ngrams if el == 1])
         num_rep_character_ngrams = min(
             int(np.sqrt(len(freq_character_ngrams))),
-            len(freq_character_ngrams) - val_less_than_one,
+            len(freq_character_ngrams) - val_one,
         )
         character_repetition_ratio = sum(
             freq_character_ngrams[:num_rep_character_ngrams]
