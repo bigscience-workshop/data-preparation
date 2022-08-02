@@ -9,7 +9,7 @@ The supported languages are defined in the file [languages_id.py](https://github
 
 #### 0. Understand the filtering pipeline
 
-Take a look at the pdf [explanation_filtering_pipeline.pdf](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/filtering/explanation_filtering_pipeline.pdf) for an explanation of the filtering pipeline.
+Take a look at the pdf [explanation filtering pipeline](https://drive.google.com/file/d/1cCJ8sWE88TRLDAa3eHLmXO4JlkR2QzLY/view?usp=sharing) for an explanation of the filtering pipeline.
 
 #### 1. Define the lists of stop words and flagged words, and check how the anonymization and the normalization of texts are done
 
