@@ -88,9 +88,7 @@ thread_data = threading.local()
 
 def set_global_session():
     if not hasattr(thread_data, "s3_client"):
-        thread_data.s3_client = boto3.session.Session(region_name="us-east-1").client(
-            "s3", config=Config(signature_version=botocore.UNSIGNED)
-        )
+        thread_data.s3_client = boto3.session.Session(region_name="us-east-1").client("s3")
 
 
 thread_pool = None
