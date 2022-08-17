@@ -20,7 +20,6 @@ python clean.py \
 - slurm: The actual bash scripts we ran to get our dataset
 - data: the mapping between each dataset and the processings scripts that have been applied to it
 - streamlit-app: an application allowing to visualize the modifications made by the pipeline (see the space [bigscience-catalogue-lm-data/process-pipeline-visualizer](https://huggingface.co/spaces/bigscience-catalogue-lm-data/process-pipeline-visualizer) )
-- download_scripts: TODO
 
 ## Necessary downloads for cleaning
 
