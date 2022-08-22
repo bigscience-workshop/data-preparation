@@ -4,7 +4,7 @@ Code used for sourcing and pre-processing datasets for BigScience project
 
 # [Code for making the Pseudo-Crawl dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/sourcing/cc_pseudo_crawl)
 
-# [Filtering library used to filter OSCAR](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/filtering)
+# [Filtering library used to filter OSCAR](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/oscar_filtering)
 
 # [Code used to run preprocessing pipeline on crowdsourced dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training)
 
