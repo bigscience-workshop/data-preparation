@@ -1,6 +1,6 @@
 conda activate pii
 
-TRAINING_DATA_PREPARATION_REPO=~/code/big_science/data-preparation/preprocessing/training
+TRAINING_DATA_PREPARATION_REPO=~/code/big_science/data-preparation/preprocessing/catalogue_cleaning
 pushd $TRAINING_DATA_PREPARATION_REPO
 
 python pii/pii_processor.py \

@@ -15,7 +15,7 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01_quality_improvement_processing_pipeline
+WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/catalogue_cleaning/01_quality_improvement_processing_pipeline
 pushd $WORKING_DIR
 
 # =======  GET DATASET AND FUNCTIONS ======
