@@ -1,6 +1,6 @@
 # Data prepation
 
-This repository contains all the tools and code used to build the ROOTS dataset produced by the BigScience initiative to train the BLOOM models as well as a reduced version to train the tokenizer.
+Code used for sourcing and pre-processing datasets for BigScience project
 
 # [Code for making the Pseudo-Crawl dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/sourcing/cc_pseudo_crawl)
 
