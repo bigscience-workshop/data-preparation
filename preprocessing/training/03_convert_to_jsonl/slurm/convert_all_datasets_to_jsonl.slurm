@@ -21,7 +21,7 @@ pushd $TRAINING_DATA_PREPARATION_REPO
 # ===== GET DATASET ======
 
 DATASET_ID=$SLURM_ARRAY_TASK_ID
-DATASET_NAME=$(python 03_convert_to_jsonl/get_dataset_name.py --dataset-csv-path 01_quality_improvment_processing_pipeline/data/training.csv --index $DATASET_ID)
+DATASET_NAME=$(python 03_convert_to_jsonl/get_dataset_name.py --dataset-csv-path 01_quality_improvement_processing_pipeline/data/training.csv --index $DATASET_ID)
 
 echo "Converting $DATASET_NAME to json"
 

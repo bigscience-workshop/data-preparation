@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=filter_short_document_all_catalogue_datasets
+#SBATCH --job-name=preprocess_all_catalogue_datasets
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1          # crucial - only 1 task per dist per node!
 #SBATCH --cpus-per-task=40         # number of cores per tasks
 #SBATCH --hint=nomultithread         # we get physical cores not logical
 #SBATCH --partition=cpu_p1
 #SBATCH --time 20:00:00              # maximum execution time (HH:MM:SS)
-#SBATCH --output=logs/filter_short_document_catalogue_1/%x-%j.out           # output file name
+#SBATCH --output=logs/preprocess_all_catalogue_datasets/%x-%j.out           # output file name
 #SBATCH --array=0-516   # TODO: modify according to the number of models you want to evaluated
 #SBATCH --account=six@cpu
 
@@ -15,7 +15,7 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01_quality_improvment_processing_pipeline
+WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01_quality_improvement_processing_pipeline
 pushd $WORKING_DIR
 
 # =======  GET DATASET AND FUNCTIONS ======
@@ -24,35 +24,23 @@ DATASET_ID=$SLURM_ARRAY_TASK_ID
 DATASET_TRAINING_CSV=$WORKING_DIR/data/training.csv
 readarray -t DATASET_PATH_AND_FUNCTIONS < <(python -c "
 import pandas as pd
-import numpy as np
 
 data = pd.read_csv(\"${DATASET_TRAINING_CSV}\")
 dataset = data.iloc[$DATASET_ID]
-dataset = dataset.replace(np.nan, \"\", regex=True)
 print(dataset[\"dataset_name\"])
-
-print(
-    dataset[\"--dedups\"] + " " +
-    dataset[\"--maps-and-filters argument\"] + " " +
-    "filter_small_docs_bytes_300 filter_small_docs_bytes_1024"
-)
-
-if dataset[\"--preprocessings\"] = \"\":
+if pd.notnull(dataset[\"--preprocessings\"]):
     print(dataset[\"--preprocessings\"])
 else:
     print()
 ")
-
 DATASET_PATH=${DATASET_PATH_AND_FUNCTIONS[0]}
 PREPROCESSINGS=${DATASET_PATH_AND_FUNCTIONS[1]}
-OFFICIAL_PREPROCESSINGS=${DATASET_PATH_AND_FUNCTIONS[2]}
 
-if [[ $OFFICIAL_PREPROCESSINGS == KILL ]]
+if [[ $PREPROCESSINGS == KILL ]]
 then
     echo "Not supposed to preprocess $DATASET_PATH"
     exit 0
 fi
-
 
 # ====== OBTAIN DATASET_NAME =======
 
@@ -70,7 +58,7 @@ fi
 
 # ====== RUN PYTHON SCRIPT =======
 
-BASE_PATH=$six_ALL_CCFRSCRATCH/bigscience-datasets/catalogue/filter/$DATASET_NAME
+BASE_PATH=$six_ALL_CCFRSCRATCH/bigscience-datasets/catalogue/clean_v2/$DATASET_NAME
 SAVE_PATH=$BASE_PATH/final
 CHECKS_SAVE_PATH=$BASE_PATH/checks
 LOGS_PATH=$BASE_PATH/logs.txt
