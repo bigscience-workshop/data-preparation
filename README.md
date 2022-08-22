@@ -4,7 +4,7 @@ This repository contains all the tools and code used to build the ROOTS dataset 
 
 # [Code for making the Pseudo-Crawl dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/sourcing/cc_pseudo_crawl)
 
-# [Filtering library used to filter OSCAR](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/oscar_filtering)
+# [Filtering library used to filter OSCAR](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training/01b_oscar_cleaning_and_filtering)
 
 # [Code used to run preprocessing pipeline on crowdsourced dataset](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training)
 
