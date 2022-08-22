@@ -13,10 +13,7 @@
 set -x -e
 
 source $six_ALL_CCFRWORK/start-prod
-conda activate thomas_data_tooling # Debug deepspeed temporarily
-
-TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
-pushd $TRAINING_DATA_PREPARATION_REPO
+conda activate thomas_data_tooling
 
 DATASETS_NAMES=(
 "'bigscience-catalogue-lm-data/lm_ar_arabench'"

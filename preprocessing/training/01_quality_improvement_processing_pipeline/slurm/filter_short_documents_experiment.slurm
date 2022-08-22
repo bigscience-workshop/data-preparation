@@ -15,13 +15,13 @@ set -x -e
 source $six_ALL_CCFRWORK/start-prod
 conda activate thomas_data_tooling
 
-TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
-pushd $TRAINING_DATA_PREPARATION_REPO
+WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01_quality_improvement_processing_pipeline
+pushd $WORKING_DIR
 
 # =======  GET DATASET AND FUNCTIONS ======
 
 DATASET_ID=$SLURM_ARRAY_TASK_ID
-DATASET_TRAINING_CSV=$TRAINING_DATA_PREPARATION_REPO/training.csv
+DATASET_TRAINING_CSV=$WORKING_DIR/data/training.csv
 readarray -t DATASET_PATH_AND_FUNCTIONS < <(python -c "
 import pandas as pd
 import numpy as np

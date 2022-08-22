@@ -1,6 +1,6 @@
 # Dataset viewer app
 
-This a a PoC developed on the road to have a look at the operations done by the `clean.py` script ran on several datasets.
+This a a PoC developed on the road to have a look at the operations done by the `preprocessing/training/01_quality_improvement_processing_pipeline/clean.py` script ran on several datasets.
 
 ## Launch the app
 
@@ -20,7 +20,7 @@ streamlit run app.py --server.port 8081 --server.fileWatcherType none
 
 ## Connect to the PoC app
 
-If you have launched the app on a remote host you will need to create a tunnel to connect. For example for the Bigscience project we used something like:
+If you have launched the app on a GCP remote host you will need to create a tunnel to connect. For example for the Bigscience project we used something like:
 
 ```bash
 gcloud compute <VM-NAME> --project=<PROJECT-NAME> -- -L 8081:localhost:8081
