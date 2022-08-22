@@ -12,9 +12,9 @@
 set -x -e
 
 source $six_ALL_CCFRWORK/start-prod
-conda activate thomas_data_tooling # Debug deepspeed temporarily
+conda activate thomas_data_tooling
 
-TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/training
+TRAINING_DATA_PREPARATION_REPO=$WORK/code/big_science/data-preparation/preprocessing/tokenizer/python_script
 pushd $TRAINING_DATA_PREPARATION_REPO
 
 DATASET_RATIOS_FILE=$TRAINING_DATA_PREPARATION_REPO/tokenizer_dataset_ratios.json

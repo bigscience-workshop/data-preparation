@@ -1,7 +1,7 @@
 # Metadata Analysis
 This folder contains a tool to estimate the size per language of the catalogue datasets. It also contains the metadata and dataset names used for the catalogue part of the BLOOM training corpus. There are three files in this folder:
 
-- `dataset.txt`: contains all the catalogue dataset names 
+- `datasets.txt`: contains all the catalogue dataset names 
 - `meta.jsonl`: contains the metadata of each of the catalogue datasets as created by `datasets`
 - `metadata_analysis.py`: a script to anlayse the size per language based on the former to files.
 
