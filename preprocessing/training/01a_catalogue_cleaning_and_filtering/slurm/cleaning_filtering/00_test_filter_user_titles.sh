@@ -1,6 +1,6 @@
 conda activate datacatalog
 
-WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01_quality_improvement_processing_pipeline
+WORKING_DIR=$WORK/code/big_science/data-preparation/preprocessing/training/01a_catalogue_cleaning_and_filtering
 pushd $WORKING_DIR
 
 python clean.py \

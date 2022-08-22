@@ -1,6 +1,6 @@
 # Dataset viewer app
 
-This a a PoC developed on the road to have a look at the operations done by the `preprocessing/training/01_quality_improvement_processing_pipeline/clean.py` script ran on several datasets.
+This a a PoC developed on the road to have a look at the operations done by the `preprocessing/training/01a_catalogue_cleaning_and_filtering/clean.py` script ran on several datasets.
 
 ## Launch the app
 
