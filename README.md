@@ -7,7 +7,7 @@ This repository contains all the tools and code used to build the ROOTS dataset 
 
 More detail on the process, including the specifics of the *cleaning*, *filtering*, and *deduplication* operations, can be found in Sections 2 "(Crowd)Sourcing a Language Resource Catalogue" and 3 "Processing OSCAR" of our paper [on the ROOTS dataset creation](https://openreview.net/forum?id=UoEw6KigkUn).
 
-## Key ressources
+## Key resources
 ### [Code for making the Pseudo-Crawl dataset](sourcing/cc_pseudo_crawl)
 
 ### [Filtering library used to filter OSCAR](preprocessing/training/01b_oscar_cleaning_and_filtering)
