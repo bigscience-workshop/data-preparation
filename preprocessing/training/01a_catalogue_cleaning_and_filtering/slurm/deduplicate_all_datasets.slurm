@@ -7,7 +7,7 @@
 #SBATCH --partition=cpu_p1
 #SBATCH --time 20:00:00              # maximum execution time (HH:MM:SS)
 #SBATCH --output=logs/deduplicate_all_catalogue_datasets/%x-%j.out           # output file name
-#SBATCH --array=0-516   # TODO: modify according to the number of models you want to evaluated
+#SBATCH --array=0-516
 #SBATCH --account=six@cpu
 
 set -x -e
