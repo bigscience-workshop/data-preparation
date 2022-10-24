@@ -76,9 +76,27 @@ ipv4_pattern = r'(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:\.(?:25[0-5]|2[0-4][
 ipv6_pattern = r'(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])'
 ip_pattern = r"(?:^|[\b\s@?,!;:\'\")(.\p{Han}])(" + r"|".join([ipv4_pattern, ipv6_pattern]) + ")(?:$|[\s@,?!;:\'\"(.\p{Han}])"
 # https://regex101.com/r/OZdSUu/5
-email_pattern = r'(?:^|[\s\b\'\"@,?!;:)(.\p{Han}])([^\s@,?!;:)(]+@[^,\s!?;,]+[^\s\b\'\"@,?!;:)(.])(?:$|[\s\b@,?!;:)(.\p{Han}])'
+#email_pattern = r'(?:^|[\s\b\'\"@,?!;:)(.\p{Han}])([^\s@,?!;:)(]+@[^,\s!?;,]+[^\s\b\'\"@,?!;:)(.])(?:$|[\s\b@,?!;:)(.\p{Han}])'
+email_pattern = r'''
+    (?<= ^ | [\s\b'"@,?!;:)(.\p{Han}ñ] )
+    (
+      [^@\s?!;,:\b)('"]+
+      @
+      [^@\s!?;,]+
+      [^@\s?!;,:\b)('".]
+      \.
+      \w{2,}
+    )
+    (?= $ | [\s\b'"@,?!;:)(.\p{Han}] )
+'''
 # https://regex101.com/r/mOqi1s/3
-user_pattern = r'(?:^|[\s@,?!;:\'\")(\p{Han}])(@[^\s@,?!;:\'\")(]{3,})'
+#user_pattern = r'(?:^|[\s@,?!;:\'\")(\p{Han}])(@[^\s@,?!;:\'\")(]{3,})'
+user_pattern = r'''
+  (?<= ^ | [)(\s@,?!;:'"\p{Han}] )
+  (@
+    [^)(\s@,?!;:'"]{3,}
+  )
+'''
 # Examples from https://regexpattern.com/phone-number/
 # https://regex101.com/r/lZZ0XP/4
 # Also matches MLS numbers
@@ -89,8 +107,8 @@ key_regex = regex.compile(key_pattern, flags=regex.MULTILINE) #, re.MULTILINE)
 ipv4_regex = regex.compile(ipv4_pattern)
 ipv6_regex = regex.compile(ipv6_pattern)
 ip_regex = regex.compile(ip_pattern, flags=regex.MULTILINE) #, re.MULTILINE)
-email_regex = regex.compile(email_pattern, flags=regex.MULTILINE) #, re.MULTILINE)
-user_regex = regex.compile(user_pattern, flags=regex.MULTILINE) #, re.MULTILINE)
+email_regex = regex.compile(email_pattern, flags=regex.MULTILINE|regex.VERBOSE) #, re.MULTILINE)
+user_regex = regex.compile(user_pattern, flags=regex.MULTILINE|regex.VERBOSE) #, re.MULTILINE)
 # phone_regex = regex.compile(phone_pattern, flags=regex.MULTILINE) #, re.MULTILINE)
 # TODO: license
 
