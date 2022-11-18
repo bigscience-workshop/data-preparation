@@ -1,5 +1,5 @@
 import string
-import emoji
+import emoji  # Use version emoji==1.6.1, otherwise it won't have UNICODE_EMOJI
 
 
 main_special_characters = string.punctuation + string.digits + string.whitespace
