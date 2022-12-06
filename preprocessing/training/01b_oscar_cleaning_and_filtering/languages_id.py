@@ -119,5 +119,14 @@ langs_id = [
         "sentencepiece_id": "zh",
         "kenlm_id": "zh",
     },
+    {
+        "lang": "English",
+        "dataset_id": "lumi",
+        "stopwords_id": "en",
+        "flagged_words_id": "en",
+        "fasttext_id": "en",
+        "sentencepiece_id": "en",
+        "kenlm_id": "en",
+    },
 ]
 langs_id = pd.DataFrame(langs_id)

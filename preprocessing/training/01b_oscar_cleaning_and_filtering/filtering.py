@@ -1,4 +1,6 @@
+import ast
 import re
+import string
 
 import numpy as np
 
@@ -110,6 +112,7 @@ class ModifyingDocuments:
         ],
     ):
         """There are different whitespace characters."""
+        whitespace = "".join(whitespace + list(string.whitespace))
         whitespace = set(whitespace)
         document = "".join(
             [char if char not in whitespace else " " for char in document]
@@ -127,31 +130,31 @@ class ModifyingDocuments:
     @staticmethod
     def normalization(
         document,
-        remove_non_printing_characters,
+        cond_remove_non_printing_characters,
         strip,
         lower_case,
-        uniform_whitespace,
-        replace_digits_with_zeros,
-        replace_unicode_punctuation,
+        cond_uniform_whitespace,
+        cond_replace_digits_with_zeros,
+        cond_replace_unicode_punctuation,
         non_printing_characters_re=normalization["non_printing_characters_re"],
         digits_re=normalization["digits_re"],
         unicode_punctuation=normalization["unicode_punctuation"],
     ):
-        if remove_non_printing_characters:
+        if strip:
+            document = document.strip()
+        if cond_uniform_whitespace:
+            document = ModifyingDocuments.uniform_whitespace(document)
+        if cond_remove_non_printing_characters:
             document = ModifyingDocuments.remove_non_printing_characters(
                 document, non_printing_characters_re
             )
-        if strip:
-            document = document.strip()
         if not document:
             return document
         if lower_case:
             document = document.lower()
-        if uniform_whitespace:
-            document = ModifyingDocuments.uniform_whitespace(document)
-        if replace_digits_with_zeros:
+        if cond_replace_digits_with_zeros:
             document = ModifyingDocuments.replace_digits_with_zeros(document, digits_re)
-        if replace_unicode_punctuation:
+        if cond_replace_unicode_punctuation:
             document = ModifyingDocuments.replace_unicode_punctuation(
                 document, unicode_punctuation
             )
@@ -210,12 +213,12 @@ class ModifyingDocuments:
         if sentencepiece_model_tok:
             document_normalized = ModifyingDocuments.normalization(
                 document=document,
-                remove_non_printing_characters=True,
+                cond_remove_non_printing_characters=True,
                 strip=True,
                 lower_case=True,
-                uniform_whitespace=True,
-                replace_digits_with_zeros=True,
-                replace_unicode_punctuation=True,
+                cond_uniform_whitespace=True,
+                cond_replace_digits_with_zeros=True,
+                cond_replace_unicode_punctuation=True,
             )
             words = ModifyingDocuments.tokenization(
                 document_normalized, sentencepiece_model_tok, join_on_whitespace=False
@@ -354,12 +357,15 @@ class ModifyingDocuments:
     ):
         document = ModifyingDocuments.normalization(
             document=document,
-            remove_non_printing_characters=False,
+            cond_remove_non_printing_characters=True,
             strip=True,
             lower_case=False,
-            uniform_whitespace=cond_uniform_whitespace,
-            replace_digits_with_zeros=False,
-            replace_unicode_punctuation=cond_replace_unicode_punctuation,
+            cond_uniform_whitespace=cond_uniform_whitespace,
+            cond_replace_digits_with_zeros=True,
+            cond_replace_unicode_punctuation=cond_replace_unicode_punctuation,
+            non_printing_characters_re=normalization["non_printing_characters_re"],
+            digits_re=normalization["digits_re"],
+            unicode_punctuation=normalization["unicode_punctuation"],
         )
         if cond_remove_words_with_incorrect_substrings:
             document = ModifyingDocuments.remove_words_with_incorrect_substrings(
@@ -377,9 +383,12 @@ class ModifyingDocuments:
 
 
 class FunctionDatasetModifyingDocuments:
-    def __init__(self, lang_dataset_id):
+    def __init__(self, lang_dataset_id, sentencepiece_model, kenlm_model):
         self.lang_dataset_id = lang_dataset_id
+
         self.param = LoadParameters.load_parameters(lang_dataset_id)
+        self.sentencepiece_model = sentencepiece_model
+        self.kenlm_model = kenlm_model
 
     def __call__(self, example):
         example["text"] = ModifyingDocuments.modifying_documents(
@@ -396,10 +405,25 @@ class FunctionDatasetModifyingDocuments:
             cond_remove_long_words=self.param["cond_remove_long_words"],
             length_word_max_cutoff=self.param["length_word_max_cutoff"],
         )
+        perplexity_score = Filtering.compute_perplexity_score(
+            example["text"],
+            self.sentencepiece_model,
+            self.kenlm_model,
+        )
+        meta = None
+        if "meta" not in example:
+            example["meta"] = {}
+        elif isinstance(example["meta"], str):
+            meta = ast.literal_eval(example["meta"])
+        if meta is not None:
+            meta["perplexity_score"] = perplexity_score
+            example["meta"] = str(meta)
+        else:
+            example["meta"]["perplexity_score"] = perplexity_score
         return example
 
     def __reduce__(self):
-        return (self.__class__, (self.lang_dataset_id,))
+        return (self.__class__, (self.lang_dataset_id, self.sentencepiece_model, self.kenlm_model))
 
 
 class Filtering:
@@ -685,12 +709,12 @@ class Filtering:
     def compute_perplexity_score(document, sentencepiece_model, kenlm_model):
         document = ModifyingDocuments.normalization(
             document=document,
-            remove_non_printing_characters=True,
+            cond_remove_non_printing_characters=True,
             strip=True,
             lower_case=False,
-            uniform_whitespace=True,
-            replace_digits_with_zeros=True,
-            replace_unicode_punctuation=True,
+            cond_uniform_whitespace=True,
+            cond_replace_digits_with_zeros=True,
+            cond_replace_unicode_punctuation=True,
         )
         document = ModifyingDocuments.tokenization(
             document, sentencepiece_model, join_on_whitespace=True
@@ -835,13 +859,11 @@ class FunctionDatasetFiltering:
         self,
         lang_dataset_id,
         path_fasttext_model,
-        path_sentencepiece_model,
-        path_kenlm_model,
+        sentencepiece_model,
+        kenlm_model,
     ):
         self.lang_dataset_id = lang_dataset_id
         self.path_fasttext_model = path_fasttext_model
-        self.path_sentencepiece_model = path_sentencepiece_model
-        self.path_kenlm_model = path_kenlm_model
 
         self.param = LoadParameters.load_parameters(lang_dataset_id)
         self.stopwords = LoadParameters.load_stopwords(lang_dataset_id)
@@ -849,15 +871,11 @@ class FunctionDatasetFiltering:
         self.model_lang_id = LoadParameters.load_model_lang_id(
             lang_dataset_id, path_fasttext_model
         )
-        self.sentencepiece_model = LoadParameters.load_sentencepiece_model(
-            lang_dataset_id, path_sentencepiece_model
-        )
+        self.sentencepiece_model = sentencepiece_model
         self.sentencepiece_model_tok = (
             self.sentencepiece_model if self.param["tokenization"] else None
         )
-        self.kenlm_model = LoadParameters.load_kenlm_model(
-            lang_dataset_id, path_kenlm_model
-        )
+        self.kenlm_model = kenlm_model
 
     def __call__(self, example):
         keep_example = Filtering.filtering(
@@ -908,8 +926,8 @@ class FunctionDatasetFiltering:
             (
                 self.lang_dataset_id,
                 self.path_fasttext_model,
-                self.path_sentencepiece_model,
-                self.path_kenlm_model,
+                self.sentencepiece_model,
+                self.kenlm_model,
             ),
         )
 
@@ -920,22 +938,26 @@ class DatasetFiltering:
         dataset,
         lang_dataset_id,
         path_fasttext_model,
-        path_sentencepiece_model,
-        path_kenlm_model,
+        sentencepiece_model,
+        kenlm_model,
         num_proc,
         path_dir_save_dataset,
+        dataset_name,
     ):
         self.ds = dataset
         self.lang_dataset_id = lang_dataset_id
-        self.path_fasttext_model = path_fasttext_model
-        self.path_sentencepiece_model = path_sentencepiece_model
-        self.path_kenlm_model = path_kenlm_model
+        self.sentencepiece_model = sentencepiece_model
+        self.sentencepiece_model = sentencepiece_model
+        self.kenlm_model = kenlm_model
         self.num_proc = num_proc
         self.path_dir_save_dataset = path_dir_save_dataset
+        self.dataset_name = dataset_name
 
     def modifying_documents(self):
         func_dataset_modifying_documents = FunctionDatasetModifyingDocuments(
-            self.lang_dataset_id
+            self.lang_dataset_id,
+            self.sentencepiece_model,
+            self.kenlm_model,
         )
         self.ds = self.ds.map(func_dataset_modifying_documents, num_proc=self.num_proc)
 
@@ -943,15 +965,13 @@ class DatasetFiltering:
         func_dataset_filtering = FunctionDatasetFiltering(
             self.lang_dataset_id,
             self.path_fasttext_model,
-            self.path_sentencepiece_model,
-            self.path_kenlm_model,
+            self.sentencepiece_model,
+            self.kenlm_model,
         )
         self.ds = self.ds.filter(func_dataset_filtering, num_proc=self.num_proc)
 
     def save_dataset(self):
         pathlib.Path(self.path_dir_save_dataset).mkdir(parents=True, exist_ok=True)
-        path_dir_save_dataset = pathlib.PurePath(
-            self.path_dir_save_dataset, self.lang_dataset_id
-        )
+        path_dir_save_dataset = pathlib.PurePath(self.path_dir_save_dataset, self.dataset_name)
         pathlib.Path(path_dir_save_dataset).mkdir(parents=True, exist_ok=True)
         self.ds.save_to_disk(path_dir_save_dataset)

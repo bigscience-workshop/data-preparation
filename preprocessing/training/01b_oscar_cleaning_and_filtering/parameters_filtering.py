@@ -10,7 +10,7 @@ other_special_characters = (
     "゜ʼ≖ʼ¤ッツシ℃√！【】‿∞➤～πه۩☛₨➩☻๑٪♥ıॽ《‘©﴿٬？▷Г♫∟™ª₪®「—❖"
     "」﴾》"
 )
-emoji = list(emoji.UNICODE_EMOJI["en"].keys())
+emoji = list(emoji.EMOJI_DATA.keys())
 
 special_characters_default = set(main_special_characters + other_special_characters)
 special_characters_default.update(emoji)
@@ -492,6 +492,40 @@ parameters_filtering_zh = {
     "perplexity_max_cutoff": 2095,
 }
 
+parameters_filtering_lumi = {
+    "cond_uniform_whitespace": True,
+    "cond_replace_unicode_punctuation": True,
+    "cond_remove_words_with_incorrect_substrings": False,
+    "incorrect_word_substrings": [], #["http", "www", ".com", "href", "//"],
+    "cond_remove_long_words": False,
+    "length_word_max_cutoff": 25,
+    "cond_check_number_words": False,
+    "tokenization": False,
+    "strip_characters": set(),
+    "number_words_min_cutoff": 20,
+    "number_words_max_cutoff": 100000,
+    "cond_check_character_repetition_removal": False,
+    "character_repetition_length": 10,
+    "character_repetition_max_cutoff": 0.106,
+    "cond_check_word_repetition_removal": False,
+    "word_repetition_length": 5,
+    "word_repetition_max_cutoff": 0.19,
+    "cond_check_special_characters": False,
+    "special_characters": set(),
+    "special_characters_max_cutoff": 0.4,
+    "cond_words_augmentation": False,
+    "words_augmentation_group_sizes": [],
+    "words_augmentation_join_char": "",
+    "cond_check_stopwords": False,
+    "stopwords_min_cutoff": 0.3,
+    "cond_check_flagged_words": False,
+    "flagged_words_max_cutoff": 0.01,
+    "cond_check_lang_id": False,
+    "lang_id_min_cutoff": 0.80,
+    "cond_check_perplexity": True,
+    "perplexity_max_cutoff": 1500,
+}
+
 parameters_filtering = {
     "default": parameters_filtering_default,
     "ar": parameters_filtering_ar,
@@ -507,4 +541,5 @@ parameters_filtering = {
     "ur": parameters_filtering_ur,
     "vi": parameters_filtering_vi,
     "zh": parameters_filtering_zh,
+    "lumi": parameters_filtering_lumi,
 }

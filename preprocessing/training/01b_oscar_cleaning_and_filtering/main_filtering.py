@@ -3,10 +3,12 @@
 from multiprocessing import cpu_count
 
 import argparse
+import glob
+import os
 
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 
-from filtering import DatasetFiltering
+from filtering import DatasetFiltering, LoadParameters
 
 
 def check_num_proc(num_proc: int = -1) -> int:
@@ -59,7 +61,7 @@ def parseArgs():
     parser.add_argument(
         "--data_files",
         type=str,
-        default=None,
+        default="/mnt/disks/looking_glass_storage/data/",
         help="'load_dataset' returns all files that match the Unix style pattern passed by 'data_files'",
     )
     parser.add_argument(
@@ -111,6 +113,7 @@ def parseArgs():
 def main():
     args = parseArgs()
 
+    """
     dataset = load_dataset(
         args.dataset_name,
         args.config_name,
@@ -118,19 +121,60 @@ def main():
         split=args.split,
         use_auth_token=True,
     )
+    """
+
+    sentencepiece_model = LoadParameters.load_sentencepiece_model(
+        args.lang_dataset_id, args.path_sentencepiece_model
+    )
+    kenlm_model = LoadParameters.load_kenlm_model(
+        args.lang_dataset_id, args.path_kenlm_model
+    )
+
+
+    file = args.data_files + args.dataset_name
+    print(file)
+    print("Loading from disk on", file)
+    dataset = load_from_disk(file)
+    print("done loading")
 
     dataset_filtering = DatasetFiltering(
         dataset=dataset,
         lang_dataset_id=args.lang_dataset_id,
         path_fasttext_model=args.path_fasttext_model,
-        path_sentencepiece_model=args.path_sentencepiece_model,
-        path_kenlm_model=args.path_kenlm_model,
+        sentencepiece_model=sentencepiece_model,
+        kenlm_model=kenlm_model,
         num_proc=check_num_proc(args.num_proc),
         path_dir_save_dataset=args.path_dir_save_dataset,
+        dataset_name=args.dataset_name,
     )
     dataset_filtering.modifying_documents()
-    dataset_filtering.filtering()
+    # dataset_filtering.filtering()
     dataset_filtering.save_dataset()
+
+    """
+    # ROOTS:
+    ds_name = "/mnt/disks/looking_glass_storage/data/" + args.dataset_name
+    for file in glob.glob(ds_name + "/*"):
+        print(file)
+        dataset_name = file.split("/")[-1]
+        print("Loading from disk on", file)
+        dataset = load_from_disk(file)
+        print("done loading")
+
+        dataset_filtering = DatasetFiltering(
+            dataset=dataset,
+            lang_dataset_id=args.lang_dataset_id,
+            path_fasttext_model=args.path_fasttext_model,
+            sentencepiece_model=sentencepiece_model,
+            kenlm_model=kenlm_model,
+            num_proc=check_num_proc(args.num_proc),
+            path_dir_save_dataset=args.path_dir_save_dataset,
+            dataset_name=dataset_name,
+        )
+        dataset_filtering.modifying_documents()
+        # dataset_filtering.filtering()
+        dataset_filtering.save_dataset()
+    """
 
 
 if __name__ == "__main__":
