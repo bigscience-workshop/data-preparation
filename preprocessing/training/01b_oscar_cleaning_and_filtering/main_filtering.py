@@ -61,7 +61,7 @@ def parseArgs():
     parser.add_argument(
         "--data_files",
         type=str,
-        default="/mnt/disks/looking_glass_storage/data/",
+        default="",
         help="'load_dataset' returns all files that match the Unix style pattern passed by 'data_files'",
     )
     parser.add_argument(
@@ -148,6 +148,7 @@ def main():
         dataset_name=args.dataset_name,
     )
     dataset_filtering.modifying_documents()
+    # dataset_filtering.ds = dataset_filtering.ds.filter(lambda example: len(example["text"]) <= 188944, num_proc=args.num_proc)
     # dataset_filtering.filtering()
     dataset_filtering.save_dataset()
 

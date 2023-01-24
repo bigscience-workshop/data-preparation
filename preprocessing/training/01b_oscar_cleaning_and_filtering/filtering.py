@@ -217,7 +217,7 @@ class ModifyingDocuments:
                 strip=True,
                 lower_case=True,
                 cond_uniform_whitespace=True,
-                cond_replace_digits_with_zeros=True,
+                cond_replace_digits_with_zeros=False,
                 cond_replace_unicode_punctuation=True,
             )
             words = ModifyingDocuments.tokenization(
@@ -361,7 +361,7 @@ class ModifyingDocuments:
             strip=True,
             lower_case=False,
             cond_uniform_whitespace=cond_uniform_whitespace,
-            cond_replace_digits_with_zeros=True,
+            cond_replace_digits_with_zeros=False,
             cond_replace_unicode_punctuation=cond_replace_unicode_punctuation,
             non_printing_characters_re=normalization["non_printing_characters_re"],
             digits_re=normalization["digits_re"],
@@ -410,16 +410,10 @@ class FunctionDatasetModifyingDocuments:
             self.sentencepiece_model,
             self.kenlm_model,
         )
-        meta = None
-        if "meta" not in example:
-            example["meta"] = {}
-        elif isinstance(example["meta"], str):
-            meta = ast.literal_eval(example["meta"])
-        if meta is not None:
-            meta["perplexity_score"] = perplexity_score
-            example["meta"] = str(meta)
-        else:
-            example["meta"]["perplexity_score"] = perplexity_score
+
+        example["perplexity_score"] = perplexity_score
+        example["text_length"] = len(example["text"])
+
         return example
 
     def __reduce__(self):
@@ -713,7 +707,7 @@ class Filtering:
             strip=True,
             lower_case=False,
             cond_uniform_whitespace=True,
-            cond_replace_digits_with_zeros=True,
+            cond_replace_digits_with_zeros=False,
             cond_replace_unicode_punctuation=True,
         )
         document = ModifyingDocuments.tokenization(
