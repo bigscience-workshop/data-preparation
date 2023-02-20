@@ -29,6 +29,12 @@ The filtering parameters for each language are to be specified in the file [para
 
 Run the filtering with the file [main_filtering.py](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/training/01b_oscar_cleaning_and_filtering/main_filtering.py), specifying the dataset used and the links to the downloaded models. The different filters are coded in the file [filtering.py](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/training/01b_oscar_cleaning_and_filtering/filtering.py).
 
+Some common issues:
+- OSCAR-v2 metadata can cause cryptic Arrow bugs. The `remove_meta` flag will take care of this and/or space issues
+- Too-long documents can cause hangs. Use `max_len_prefilter` to remove outliers. 
+- Memory issues can arise, causing hard-to-debug hangs if a process dies silently. Reducing the number of processes will help in this case.
+- If you dataset is very large, you may have space issues in the saving stage. In this case, you will find an equivalent `.arrow` file in your `datasets` cache (typically the last-modified file in `.cache/huggingface/datasets/<dataset_name>/....`) anyway. The saving stage is mostly for better clarity and to avoid manipulating the `datasets` cache. 
+
 #### 5. Do the deduplication
 
 Do the deduplication, which is detailed in the sub folder [deduplicate](https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training/01b_oscar_cleaning_and_filtering/deduplicate).
