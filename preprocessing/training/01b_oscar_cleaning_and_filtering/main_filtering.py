@@ -53,7 +53,7 @@ def parseArgs():
     parser.add_argument(
         "--config_name",
         type=str,
-        default="unshuffled_deduplicated_af",
+        default=None,
         help="Name of the dataset config to pass.",
     )
     parser.add_argument(
@@ -93,6 +93,17 @@ def parseArgs():
         help="Path to the KenLM model used to compute perplexity scores.",
     )
     parser.add_argument(
+        "--max_len_prefilter",
+        type=int,
+        default=None,
+        help="Maximum length of documents to keep. Longer documents might crash the pipeline.",
+    )
+    parser.add_argument(
+        "--remove_meta",
+        action="store_true",
+        help="Only keep text column in dataset.",
+    )
+    parser.add_argument(
         "--num_proc",
         type=int,
         default=-1,
@@ -119,6 +130,15 @@ def main():
         use_auth_token=True,
     )
 
+    if args.remove_meta:
+        dataset = dataset.remove_columns([column for column in dataset.column_names if column != "text"])
+
+    print("Filtering too-long documents")
+    if args.max_len_prefilter is not None:
+        dataset = dataset.filter(lambda x: len(x["text"]) < args.max_len_prefilter,
+                                 num_proc=check_num_proc(args.num_proc))
+    print("Too-long documents filtered")
+
     dataset_filtering = DatasetFiltering(
         dataset=dataset,
         lang_dataset_id=args.lang_dataset_id,
@@ -128,9 +148,16 @@ def main():
         num_proc=check_num_proc(args.num_proc),
         path_dir_save_dataset=args.path_dir_save_dataset,
     )
+
+    print("Modifying documents")
     dataset_filtering.modifying_documents()
+    print("Modifying step done")
+    print("Filtering documents")
     dataset_filtering.filtering()
+    print("Filtering step done")
+    print("Saving dataset")
     dataset_filtering.save_dataset()
+    print("Dataset saved")
 
 
 if __name__ == "__main__":
