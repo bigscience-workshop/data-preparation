@@ -15,7 +15,6 @@ class GetDataForVisualization:
         self,
         dataset,
         lang_dataset_id,
-        path_fasttext_model,
         path_sentencepiece_model,
         path_kenlm_model,
         path_save_stats,
@@ -28,9 +27,6 @@ class GetDataForVisualization:
         self.param = LoadParameters.load_parameters(lang_dataset_id)
         self.stopwords = LoadParameters.load_stopwords(lang_dataset_id)
         self.flagged_words = LoadParameters.load_flagged_words(lang_dataset_id)
-        self.model_lang_id = LoadParameters.load_model_lang_id(
-            lang_dataset_id, path_fasttext_model
-        )
         self.sentencepiece_model = LoadParameters.load_sentencepiece_model(
             lang_dataset_id, path_sentencepiece_model
         )
@@ -45,28 +41,22 @@ class GetDataForVisualization:
 
     def compute_stats(self):
 
-        stats = []
-        for example in tqdm(self.ds):
-            stats_document = {}
-
-            document = example["text"]
-            if "labels" in example:
-                stats_document["labels"] = example["labels"]
+        def _compute_stats(example):
 
             character_repetition_ratios = {
                 n: round(
-                    Filtering.compute_character_repetition_ratio(document, n), 4
+                    Filtering.compute_character_repetition_ratio(example["text"], n), 4
                 )
                 for n in range(2, 16)
             }
-            stats_document[
+            example[
                 "character_repetition_ratio"
             ] = character_repetition_ratios
 
             word_repetition_ratios = {
                 n: round(
                     Filtering.compute_word_repetition_ratio(
-                        document,
+                        example["text"],
                         self.sentencepiece_model_tok,
                         self.param["strip_characters"],
                         n,
@@ -75,16 +65,16 @@ class GetDataForVisualization:
                 )
                 for n in range(3, 11)
             }
-            stats_document["word_repetition_ratio"] = word_repetition_ratios
+            example["word_repetition_ratio"] = word_repetition_ratios
 
             special_characters_ratio = Filtering.compute_special_characters_ratio(
-                document, self.param["special_characters"]
+                example["text"], self.param["special_characters"]
             )
-            stats_document["special_characters_ratio"] = special_characters_ratio
+            example["special_characters_ratio"] = special_characters_ratio
 
             if self.stopwords:
                 stopwords_ratio = Filtering.compute_stopwords_ratio(
-                    document,
+                    example["text"],
                     self.sentencepiece_model_tok,
                     self.param["strip_characters"],
                     self.param["cond_words_augmentation"],
@@ -92,11 +82,11 @@ class GetDataForVisualization:
                     self.param["words_augmentation_join_char"],
                     self.stopwords,
                 )
-                stats_document["stopwords_ratio"] = stopwords_ratio
+                example["stopwords_ratio"] = stopwords_ratio
 
             if self.flagged_words:
                 flagged_words_ratio = Filtering.compute_flagged_words_ratio(
-                    document,
+                    example["text"],
                     self.sentencepiece_model_tok,
                     self.param["strip_characters"],
                     self.param["cond_words_augmentation"],
@@ -104,26 +94,16 @@ class GetDataForVisualization:
                     self.param["words_augmentation_join_char"],
                     self.flagged_words,
                 )
-                stats_document["flagged_words_ratio"] = flagged_words_ratio
-
-            if self.model_lang_id:
-                _, lang_id_score = Filtering.compute_lang_id_pred_score(
-                    document, self.model_lang_id
-                )
-                stats_document["lang_id_score"] = lang_id_score
+                example["flagged_words_ratio"] = flagged_words_ratio
 
             if self.kenlm_model:
                 perplexity_score = Filtering.compute_perplexity_score(
-                    document, self.sentencepiece_model, self.kenlm_model
+                    example["text"], self.sentencepiece_model, self.kenlm_model
                 )
-                stats_document["perplexity_score"] = perplexity_score
+                example["perplexity_score"] = perplexity_score
 
-            stats_document["text"] = document
-
-            stats.append(stats_document)
-
-        with open(self.path_save_stats, "w") as f:
-            json.dump(stats, f)
+        mapped_ds = self.ds.map(_compute_stats, num_proc=os.cpu_count())
+        mapped_ds.to_json(self.path_save_stats)
 
 
 if __name__ == "__main__":
@@ -138,7 +118,6 @@ if __name__ == "__main__":
     max_size = 10000
 
     lang_dataset_id = lang_dataset_id
-    path_fasttext_model = "/home/teven_huggingface_co/data-preparation/preprocessing/training/01b_oscar_cleaning_and_filtering/models/lid.176.bin"
     path_sentencepiece_model = f"/home/teven_huggingface_co/data-preparation/preprocessing/training/01b_oscar_cleaning_and_filtering/models/{lang_dataset_id}.sp.model"
     path_kenlm_model = f"/home/teven_huggingface_co/data-preparation/preprocessing/training/01b_oscar_cleaning_and_filtering/models/{lang_dataset_id}.arpa.bin"
     path_save_stats = f"helen_cc_bad_examples_with_stats.json"
@@ -156,7 +135,6 @@ if __name__ == "__main__":
     get_data_for_visualization = GetDataForVisualization(
         dataset,
         lang_dataset_id,
-        path_fasttext_model,
         path_sentencepiece_model,
         path_kenlm_model,
         path_save_stats,
